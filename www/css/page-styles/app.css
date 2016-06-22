@@ -1,0 +1,35 @@
+.form-page-2 .title-in-form {
+  padding-bottom: 10px;
+  border-bottom: 1px #ccc solid;
+}
+.form-page-2 .no-width {
+  width: 80%;
+}
+.form-page-2 label.mr {
+  margin-right: 8%;
+}
+.form-page-2 ul.link-calc-list {
+  margin-bottom: 40px;
+}
+.form-page-2 ul.link-calc-list a {
+  color: #306FA5;
+  font-weight: 500;
+}
+.form-page-2 .radio-check-fields label {
+  display: inline-block;
+  margin-top: 6px;
+  padding-right: 0;
+  font-weight: 400;
+}
+.form-page-2 .radio-check-fields label + input {
+  display: inline-block;
+}
+.form-page-2 .notes-import p {
+  margin-bottom: 10px;
+}
+.form-page-2 .submit-block button {
+  margin-top: 30px;
+  background: #DDDDDD;
+  color: #523A38;
+  font-weight: 600;
+}
