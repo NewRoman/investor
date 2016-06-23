@@ -1,3 +1,21 @@
+.form-pages a {
+  color: #306FA5;
+  font-weight: 500;
+}
+.form-pages .zero-padd {
+  padding-left: 0;
+  padding-right: 0;
+}
+.form-pages .no-right-pad {
+  padding-right: 0;
+}
+.form-pages .submit-block button {
+  margin-top: 30px;
+  background: #DDDDDD;
+  border: 1px #333 solid;
+  color: #523A38;
+  font-weight: 600;
+}
 .form-page-2 .title-in-form {
   padding-bottom: 10px;
   border-bottom: 1px #ccc solid;
@@ -11,15 +29,16 @@
 .form-page-2 ul.link-calc-list {
   margin-bottom: 40px;
 }
-.form-page-2 ul.link-calc-list a {
-  color: #306FA5;
-  font-weight: 500;
+.form-page-2 .wrap-textarea {
+  display: none;
+}
+.form-page-2 .radio-check-fields {
+  display: none;
 }
 .form-page-2 .radio-check-fields label {
   display: inline-block;
   margin-top: 6px;
   padding-right: 0;
-  font-weight: 400;
 }
 .form-page-2 .radio-check-fields label + input {
   display: inline-block;
@@ -27,9 +46,66 @@
 .form-page-2 .notes-import p {
   margin-bottom: 10px;
 }
-.form-page-2 .submit-block button {
-  margin-top: 30px;
-  background: #DDDDDD;
-  color: #523A38;
+.form-page-3 .column-title {
   font-weight: 600;
+}
+.form-page-3 .inputs-lists .input-title {
+  line-height: 2.7;
+  font-weight: 600;
+}
+.form-page-3 .inputs-lists input[type='text'].form-control {
+  border: none;
+  border-bottom: 1px #818181 solid;
+  box-shadow: none;
+  border-radius: 0;
+}
+.form-page-3 .inputs-lists .mobile-title {
+  display: inline-block;
+  padding-top: 8px;
+  font-size: 13px;
+}
+.form-page-3 .inputs-lists .help-block.with-errors {
+  margin-top: 2px;
+  margin-bottom: 3px;
+}
+.form-page-3 .inputs-lists .dell,
+.form-page-3 .inputs-lists .add {
+  display: inline-block;
+}
+.form-page-3 .inputs-lists .add {
+  position: relative;
+  margin-left: 20px;
+}
+.form-page-3 .inputs-lists .add:before {
+  content: '';
+  position: absolute;
+  top: 1px;
+  left: -10px;
+  width: 1px;
+  height: 25px;
+  background: #818181;
+}
+@media screen and (max-width: 767px) {
+  .form-page-3 .inputs-lists .help-block.with-errors {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+.form-page-4 .wrap-upload-file {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.form-page-4 .wrap-upload-file i {
+  margin-right: 7px;
+  vertical-align: sub;
+  font-size: 26px;
+}
+.form-page-4 .wrap-upload-file input[type="file"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+  width: 150px;
+  cursor: pointer;
 }
