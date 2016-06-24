@@ -11,10 +11,27 @@
 }
 .form-pages .submit-block button {
   margin-top: 30px;
-  background: #DDDDDD;
-  border: 1px #333 solid;
-  color: #523A38;
-  font-weight: 600;
+}
+.form-pages .bordered {
+  padding: 4px;
+  border: 1px #ccc solid;
+}
+.form-pages .dell,
+.form-pages .add {
+  display: inline-block;
+}
+.form-pages .add {
+  position: relative;
+  margin-left: 20px;
+}
+.form-pages .add:before {
+  content: '';
+  position: absolute;
+  top: 1px;
+  left: -10px;
+  width: 1px;
+  height: 25px;
+  background: #818181;
 }
 .form-page-2 .title-in-form {
   padding-bottom: 10px;
@@ -67,23 +84,6 @@
 .form-page-3 .inputs-lists .help-block.with-errors {
   margin-top: 2px;
   margin-bottom: 3px;
-}
-.form-page-3 .inputs-lists .dell,
-.form-page-3 .inputs-lists .add {
-  display: inline-block;
-}
-.form-page-3 .inputs-lists .add {
-  position: relative;
-  margin-left: 20px;
-}
-.form-page-3 .inputs-lists .add:before {
-  content: '';
-  position: absolute;
-  top: 1px;
-  left: -10px;
-  width: 1px;
-  height: 25px;
-  background: #818181;
 }
 @media screen and (max-width: 767px) {
   .form-page-3 .inputs-lists .help-block.with-errors {

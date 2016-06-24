@@ -19,4 +19,19 @@ $(document).ready(function(){
 			$('.radio-check-fields').fadeIn();
 		}
 	});
+
+	// show input if click Yes radio btn name=fail
+	$(document).on('change', 'input[name="fails"]', function(){
+		var value = parseInt($(this).val());
+
+		var $failInput = $('[data-radio-fail="' + value + '"]').length 
+			? $('[data-radio-fail="' + value + '"]')
+			: $('[data-radio-fail]');
+
+		if ($('[data-radio-fail="' + value + '"]').length > 0) {
+			$failInput.fadeIn();
+		} else {
+			$failInput.fadeOut();
+		}
+	});
 });

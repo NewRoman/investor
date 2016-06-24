@@ -6534,3 +6534,7 @@ section:hover .small-item-carousel .owl-next{
   width: 80%;
   height: 120px;
 }
+
+input[name="fail_explain"] {
+  display: none;
+}
