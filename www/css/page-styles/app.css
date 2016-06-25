@@ -33,6 +33,24 @@
   height: 25px;
   background: #818181;
 }
+.form-pages .wrap-upload-file {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.form-pages .wrap-upload-file i {
+  margin-right: 7px;
+  vertical-align: sub;
+  font-size: 26px;
+}
+.form-pages .wrap-upload-file input[type="file"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+  width: 150px;
+  cursor: pointer;
+}
 .form-page-2 .title-in-form {
   padding-bottom: 10px;
   border-bottom: 1px #ccc solid;
@@ -91,21 +109,27 @@
     margin-bottom: 0;
   }
 }
-.form-page-4 .wrap-upload-file {
-  margin-top: 15px;
+.form-page-6 .any-transaction-fields {
+  display: none;
+}
+.form-page-7 .operation-history-fields,
+.form-page-7 .sold-experience-fields {
+  display: none;
+}
+.form-page-7 .inputs-lists .input-title {
+  line-height: 2.7;
+  font-weight: 600;
+}
+.form-page-7 .inputs-lists .mobile-title {
+  display: inline-block;
+  padding-top: 8px;
+  font-size: 13px;
+}
+.form-page-7 .inputs-lists .help-block.with-errors {
+  margin-top: 4px;
   margin-bottom: 5px;
 }
-.form-page-4 .wrap-upload-file i {
-  margin-right: 7px;
-  vertical-align: sub;
-  font-size: 26px;
-}
-.form-page-4 .wrap-upload-file input[type="file"] {
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  opacity: 0;
-  width: 150px;
-  cursor: pointer;
+.form-page-7 div.hidden-block {
+  margin-top: 25px;
+  display: none;
 }
