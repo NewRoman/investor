@@ -83,4 +83,23 @@ $(document).ready(function(){
 			$('[data-input-more-value]').fadeOut();
 		}
 	});
+
+
+	// script for page_8
+	$(document).on('change', 'input[name="out_secur"]', function(){
+
+		showRadioBlock($(this));
+	});
+	$(document).on('change', 'input[name="any_exempt_offer"]', function(){
+
+		showRadioBlock($(this));
+	});
+	$(document).on('change', 'input[name="any_outst_securit"]', function(){
+
+		showRadioBlock($(this));
+	});
+	$(document).on('change', 'input[name="other_rights"]', function(){
+
+		showRadioBlock($(this));
+	});
 });

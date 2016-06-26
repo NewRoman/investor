@@ -133,3 +133,18 @@
   margin-top: 25px;
   display: none;
 }
+.form-page-8 .out-secur-fields,
+.form-page-8 .any-exempt-offer-fields,
+.form-page-8 .any-outst-securit-fields,
+.form-page-8 .other-rights-fields {
+  display: none;
+}
+.form-page-8 .dell {
+  margin-top: 25px;
+}
+@media screen and (min-width: 992px) {
+  .form-page-8 .other-padd {
+    padding-left: 7px;
+    padding-right: 6px;
+  }
+}
