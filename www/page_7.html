@@ -237,56 +237,63 @@
 			<section class="main-section page-section only-top-margin" style="padding: 40px 0px">
 				<div class="container relative bbSection">
 
-					<div class="wpb_column col-md-10 col-md-offset-2">
-						<div class="col-md-3 mt-step-col first">
-						  <a href="/companies/create/" class="mt-step-title btn btn-mod btn-border btn-large btn-solid">Company</a>
-						</div>
-						<div class="col-md-3 mt-step-col ">
-							<a href="/campaigns/create/" class="mt-step-title btn btn-mod btn-border btn-large btn-solid">Campaign</a>
-						</div>
-						<div class="col-md-3 mt-step-col active">
-							<div class="mt-step-title btn btn-mod btn-large btn-solid">Form C</div>
+					<div class="wpb_column col-md-10 col-xs-12 col-xs-offset-0 col-md-offset-2 zero-padd">
+						<div class="row text-center">
+							<div class="col-xs-4 col-md-3 mt-step-col  first">
+							 	<a href="/companies/create/" class="mt-step-title btn btn-mod btn-border btn-large  btn-solid">Company</a>
+							</div>
+							<div class="col-xs-4 col-md-3 mt-step-col ">
+								<a href="/campaigns/create/" class="mt-step-title btn btn-mod btn-border btn-large btn-solid">Campaign</a>
+							</div>
+							<div class="col-xs-4 col-md-3 mt-step-col active">
+								<div class="mt-step-title btn btn-mod btn-large btn-solid">Form C</div>
+							</div>
 						</div>
 					</div>
-					
-					<ul class="nav nav-tabs tpl-minimal-tabs animate wpb_column col-md-10  col-lg-offset-1 subPoints" style="margin-top:20px">
-						<li class="mt-step-title col-md-2 mt-step-col align-center active" style="padding:0">
-						      <a href="?step=1" class="wizardStep">
-								Introduction
-						      </a>
-						</li>
-						<li class="mt-step-title col-md-2 mt-step-col align-center" style="padding:0">
-						      
-						      Your Fundraise 
-						      
-						</li>
-						<li class="mt-step-title col-md-2 mt-step-col align-center" style="padding:0">
-						      
-						      Use of proceeds 
-						      
-						</li>
-						<li class="mt-step-title col-md-2 mt-step-col align-center" style="padding:0">
-						      
-						      Business plan 
-						      
-						</li>
-						<li class="mt-step-title col-md-2 mt-step-col align-center" style="padding:0">
-						      
-						      Team Members
-						      
-						</li>
-						<li class="mt-step-title col-md-2 mt-step-col align-center" style="padding:0">
-						      
-						      Related parties 
-						      
-						</li>
-						
-						<li class="mt-step-title col-md-2 mt-step-col align-center campaign_preview" style="display: none">
-              
-							<a href="" target="_blank">Preview</a>
 
-						</li>
-					</ul>
+					<div class="row mt-70">
+
+						<ul class="nav nav-tabs tpl-minimal-tabs animate wpb_column subPoints sub-tabs col-xs-12"">
+							<li class="mt-step-title col-xs-4 col-sm-2 mt-step-col align-center active">
+							      <a href="?step=1" class="wizardStep">
+									Introduction
+							      </a>
+							</li>
+							<li class="mt-step-title col-xs-4 col-sm-2 mt-step-col align-center" >
+								<a href="?step=1" class="wizardStep">
+							      Your Fundraise 
+								</a>
+							</li>
+
+							<li class="mt-step-title col-sm-2 col-xs-4 mt-step-col align-center" >
+								<a href="?step=1" class="wizardStep">
+									Use of proceeds 
+								</a>
+							</li>
+							
+							<li class="mt-step-title col-sm-2 col-xs-4 mt-step-col align-center" >
+								<a href="?step=1" class="wizardStep">
+									Business plan 
+								</a>
+							</li>
+
+							<li class="mt-step-title col-sm-2 col-xs-4 mt-step-col align-center" >
+								<a href="?step=1" class="wizardStep">
+									Team Members
+								</a>
+							</li>
+
+							<li class="mt-step-title col-sm-2 col-xs-4 mt-step-col align-center" >
+								<a href="?step=1" class="wizardStep">
+									Related parties 
+								</a>
+							</li>
+							
+							<li class="mt-step-title col-sm-2 col-xs-4 mt-step-col align-center campaign_preview hidden" >
+								<a href="" target="_blank">Preview</a>
+							</li>
+						</ul>
+					</div>
 
 
 					<div class="clearfix"></div>
@@ -301,11 +308,14 @@
 						<div class="row">
 							<div class="col-md-10 col-md-offset-2">
 								<div class="mb-20 mb-md-10">
-									<span class="mb-5">Does the issuer have an operating history?</span><br/><br/>
-	                                <label class=" mt-15">
+									<span class="mb-5">Does the issuer have an operating history?</span>
+									<div class="separate">
+										
+									</div>
+	                                <label class="full-width mt-15">
 	                                    <input type="radio" name="oper_history" id="yes_oper_history" value="1" data-target="oper-history">Yes
-	                                </label><br/>
-	                                <label class="mr">
+	                                </label>
+	                                <label class="full-width">
 	                                    <input type="radio" name="oper_history" id="no_oper_history" value="2" data-target="oper-history">No
 	                                </label>
 	                            </div>
@@ -317,9 +327,8 @@
 							<span>
 								Please discuss financial milestones and operational, liquidity and other challenges.  Please discuss how the proceeds from the offering will affect your liquidity, whether these funds are necessary to the viability of the business, and how quickly you anticipate using your available cash.  Please also discuss other available sources of capital, such as lines of credit or required contributions by shareholders, for example.
 							</span>
-							<br/>
-							<br/>
-							<div class="row mb-20">
+
+							<div class="row mb-20 mt-20">
 								<div class="col-md-12">
 			                        <div class="mt-15">
 			                        	<label for="info_1">Please describe your financial condition</label>
@@ -328,17 +337,13 @@
 								</div>
 							</div>
 
-							<br/>
-							<br/>
-
 							<span>
 								Please discuss your historical results for each period for which you provide financial statements.  The discussion should focus on financial milestones and operational, liquidity and other challenges.  Please also discuss whether historical results and cash flows are representative of what investors should expect in the future.  Take into account the proceeds of the offering and any other known sources of capital.  Please discuss how the proceeds from the offering will affect your liquidity, whether these funds are necessary to the viability of the business, and how quickly you anticipate using your available cash.  Please also discuss other available sources of capital, such as lines of credit or required contributions by shareholders, for example.
 							</span>
-							<br/>
-							<br/>
-							<div class="row mb-20">
+							
+							<div class="row mb-20 mt-20">
 								<div class="col-md-12">
-			                        <div class="mt-15">
+			                        <div class="">
 			                        	<label for="info_1">Please describe your financial condition</label>
 		                            	<textarea name="info_1" id="info_1" class="input-md form-control" rows="7" placeholder="Please describe your financial condition" maxlength="2000"></textarea>
 			                        </div>
@@ -404,11 +409,12 @@ If your aggregate offering is:
 						<div class="row">
 							<div class="col-md-10 col-md-offset-2">
 								<div class="mb-20 mb-md-10">
-									<span class="mb-5">Does the issuer have an operating history?</span><br/><br/>
-	                                <label class=" mt-15">
+									<span class="mb-5">Have you previously sold securities in reliance on Regulation Crowdfunding?</span>
+									<div class="separate"></div>
+	                                <label class=" mt-15 full-width">
 	                                    <input type="radio" data-target="prev-sold" name="prev_sold" id="yes_prev_sold" value="1">Yes
-	                                </label><br/>
-	                                <label class="mr">
+	                                </label>
+	                                <label class="full-width">
 	                                    <input type="radio" data-target="prev-sold" name="prev_sold" id="no_prev_sold" value="2">No
 	                                </label>
 	                            </div>
@@ -418,7 +424,7 @@ If your aggregate offering is:
 						<div class="sold-experience-fields" data-radio-block-prev-sold='1'>
 
 							<div class="mb-10  form-group row">
-	                        	<label for="how_sold" class="col-md-4 text-right mr-0">How much have you sold within the preceeding 12-month period? </label>
+	                        	<label for="how_sold" class="col-md-4 text-right  -0">How much have you sold within the preceeding 12-month period? </label>
 	                        	<div class="col-md-4">
 	                            	<input type="text" name="how_sold" id="how_sold" class="input-md form-control" placeholder="How much have you sold within the preceeding 12-month period?" maxlength="100">
 	                            	<div class="help-block with-errors"></div>
@@ -1044,8 +1050,8 @@ If your aggregate offering is:
 							<a href="/" target="_blank">© Growthfountain 2016</a>
 						</div>
 						<!-- End Copyright -->
-						<div class="footer-made"> Made with Heart in NYC </div>
-						<br>
+						<div class="footer-made mb-20"> Made with Heart in NYC </div>
+						
 						<div class="text-left footer-made">
 							<p>This site is operated by GrowthFountain LLC (“GrowthFountain”), which is not a registered broker-dealer or funding portal. GrowthFountain does not give investment advice or recommendations. All securities herein being offered by, and all
 								information included on this site, including Form C documents, is the responsibility of the relevant issuer of such securities. GrowthFountain relies on the representations of the issuers, and has not taken any steps to verify the

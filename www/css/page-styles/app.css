@@ -1,30 +1,75 @@
-.form-pages a {
+.mt-step-col .mt-step-title.btn.btn-mod.btn-large.btn-solid {
+  display: inline-block;
+  padding-right: 0;
+  padding-left: 0;
+  width: 100%;
+}
+.active .mt-step-title.btn.btn-mod.btn-large.btn-solid {
+  padding-right: 0;
+  padding-left: 0;
+  width: 100%;
+}
+@media screen and (max-width: 480px) {
+  .mt-step-title.btn.btn-mod.btn-large.btn-solid {
+    font-size: 9px;
+  }
+}
+.sub-tabs.tpl-minimal-tabs {
+  padding-left: 7px;
+  padding-right: 7px;
+  width: 100%;
+}
+.sub-tabs.tpl-minimal-tabs > li {
+  padding: 0 0%;
+}
+.sub-tabs.tpl-minimal-tabs > li > a {
+  padding: 6px 10% 5px;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .sub-tabs.tpl-minimal-tabs > li > a {
+    font-size: 9px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .sub-tabs.tpl-minimal-tabs > li {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .sub-tabs.tpl-minimal-tabs > li > a {
+    font-size: 9px;
+  }
+}
+.page a {
   color: #306FA5;
   font-weight: 500;
 }
-.form-pages .zero-padd {
+.page .zero-padd {
   padding-left: 0;
   padding-right: 0;
 }
-.form-pages .no-right-pad {
+.page .no-right-pad {
   padding-right: 0;
 }
-.form-pages .submit-block button {
+.page .no-left-pad {
+  padding-left: 0;
+}
+.page .submit-block button {
   margin-top: 30px;
 }
-.form-pages .bordered {
+.page .bordered {
   padding: 4px;
   border: 1px #ccc solid;
 }
-.form-pages .dell,
-.form-pages .add {
+.page .dell,
+.page .add {
   display: inline-block;
 }
-.form-pages .add {
+.page .add {
   position: relative;
   margin-left: 20px;
 }
-.form-pages .add:before {
+.page .add:before {
   content: '';
   position: absolute;
   top: 1px;
@@ -33,16 +78,22 @@
   height: 25px;
   background: #818181;
 }
-.form-pages .wrap-upload-file {
+.page label > input[type="radio"] {
+  margin-right: 10px;
+}
+.page .full-width {
+  display: block;
+}
+.page .wrap-upload-file {
   margin-top: 15px;
   margin-bottom: 5px;
 }
-.form-pages .wrap-upload-file i {
+.page .wrap-upload-file i {
   margin-right: 7px;
   vertical-align: sub;
   font-size: 26px;
 }
-.form-pages .wrap-upload-file input[type="file"] {
+.page .wrap-upload-file input[type="file"] {
   position: absolute;
   left: 0;
   top: 0;
@@ -51,6 +102,9 @@
   width: 150px;
   cursor: pointer;
 }
+.page .separate {
+  min-height: 15px;
+}
 .form-page-2 .title-in-form {
   padding-bottom: 10px;
   border-bottom: 1px #ccc solid;
@@ -58,7 +112,7 @@
 .form-page-2 .no-width {
   width: 80%;
 }
-.form-page-2 label.mr {
+.form-page-2 label.marg-right {
   margin-right: 8%;
 }
 .form-page-2 ul.link-calc-list {
@@ -139,8 +193,11 @@
 .form-page-8 .other-rights-fields {
   display: none;
 }
-.form-page-8 .dell {
+.form-page-8 .any-outst-securit-fields .dell {
   margin-top: 25px;
+}
+.form-page-8 label ul {
+  list-style-type: none;
 }
 @media screen and (min-width: 992px) {
   .form-page-8 .other-padd {
