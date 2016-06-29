@@ -303,272 +303,345 @@
 
 					<div class="clearfix"></div>
 
-					<form method="post" class="form-body wpcf7-form clearfix form-page-5 form-pages" action="" role="form">
+					<form method="post" class="form-body wpcf7-form clearfix form-page-10 form-pages" action="" role="form">
 
 						<div class="mb-10  form-group row">
-                        	<label for="employees_count" class="col-md-4 text-right mr-0">How many employees do you have?</label>
-                        	<div class="col-md-4">
-                            	<input type="text" name="employees_count" id="employees_count" class="input-md form-control" placeholder="Legal Name of Issuer" maxlength="100">
+                        	<label for="ein_number" class="col-md-4 text-right">Please enter your company's EIN number</label>
+                        	<div class="col-md-8">
+                            	<input type="text" name="ein_number" id="ein_number" class="input-md form-control" placeholder="Please enter your company's EIN number" maxlength="1000">
                             	<div class="help-block with-errors"></div>
                         	</div>
                         </div>
 
-                        <div class="row">
-                        	<div class="col-sm-12 text-center">
-                        		<h5 class="mt-25 mb-0">Please enter all Officers and Directors</h5>
-                        		<p class="mt-10 mb-20 text-left">OFFICER means president, vice president, secretary, treasurer or principal financial officer, comptroller or principal accounting officer, and any person routinely performing similar functions</p>
-                        	</div>
-                        </div>
-
-                        <div class="mb-10  form-group row">
-                        	<label for="first_name" class="col-md-4 text-right mr-0">First Name </label>
-                        	<div class="col-md-4">
-                            	<input type="text" name="first_name" id="first_name" class="input-md form-control" placeholder="First Name" maxlength="100">
-                            	<div class="help-block with-errors"></div>
-                        	</div>
-                        </div>
-
-                        <div class="mb-10  form-group row">
-                        	<label for="last_name" class="col-md-4 text-right mr-0">Last Name </label>
-                        	<div class="col-md-4">
-                            	<input type="text" name="last_name" id="last_name" class="input-md form-control" placeholder="Last Name" maxlength="100">
-                            	<div class="help-block with-errors"></div>
-                        	</div>
-
-                        </div>
-
-                        <div class="mb-10  form-group row">
-                        	<label for="email" class="col-md-4 text-right mr-0">Email </label>
-                        	<div class="col-md-4">
-                            	<input type="text" name="email" id="email" class="input-md form-control" placeholder="email" maxlength="100">
-                            	<div class="help-block with-errors"></div>
-                        	</div>
-
-                        	<div class="col-md-4">
-								<p class="bordered mt-0 mb-0">
-									Changed roles within the Company?  Please list all positions and offices with the Company held and the period of time in which you served in the position or office
-								</p>
+						<div class="row mb-20">
+							<div class="col-md-12">
+		                        <div class="mt-15">
+		                        	<label for="obt_cik">We need to obtain a CIK code to upload this completed Form C into the SEC's system.  You probably don't have one, but don't despair!  Give us your permission and we'll do all the heavy lifting.</label>
+	                            	<textarea name="obt_cik" id="obt_cik" class="input-md form-control" rows="5" placeholder="We need to obtain a CIK code to upload this completed Form C into the SEC's system.  You probably don't have one, but don't despair!  Give us your permission and we'll do all the heavy lifting."  maxlength="8000"></textarea>
+		                        </div>
 							</div>
+						</div>
+
+						<div class="mb-10  form-group row">
+                        	<label for="pow_att" class="col-md-3 col-md-offset-1 text-right">Power of Attorney</label>
+                        	<div class="col-md-4">
+                            	<input type="text" name="pow_att" id="pow_att" class="input-md form-control" placeholder="Power of Attorney" maxlength="1000">
+                            	<div class="help-block with-errors"></div>
+                        	</div>
                         </div>
 
-                        <div class="row">
+                        <div class="mb-10  form-group row">
+                        	<label for="el_sign" class="col-md-3 col-md-offset-1 text-right">Electronic Signature</label>
+                        	<div class="col-md-4">
+                            	<input type="text" name="el_sign" id="el_sign" class="input-md form-control" placeholder="Electronic Signature" maxlength="1000">
+                            	<div class="help-block with-errors"></div>
+                        	</div>
+
+                        	<div class="col-md-4">
+                            	<div class="controls text-center submit-field pull-left">
+									<button type="submit" class="submit_btn btn btn-mod btn-medium btn-round"> Sumbit </button>
+								</div>
+                        	</div>
+                        </div>
+
+                        <div class="row mb-25">
+							<div class="col-md-1 col-md-offset-2 col-xs-1 no-right-pad text-right">
+								<input id="have_cik" name="have_cik" type="checkbox">
+							</div>
+
+							<div class="col-md-9 col-xs-11">
+								<label for="have_cik">I already have a CIK code</label>
+							</div>
+						</div>
+
+						<div class="already-cik-fields hide">
+							<div class="mb-10  form-group row">
+	                        	<label for="cik_code" class="col-md-4 text-right">CIK code</label>
+	                        	<div class="col-md-4">
+	                            	<input type="text" name="cik_code" id="cik_code" class="input-md form-control" placeholder="CIK code" maxlength="1000">
+	                            	<div class="help-block with-errors"></div>
+	                        	</div>
+	                        </div>
+
+	                        <div class="mb-10  form-group row">
+	                        	<label for="ccc_code" class="col-md-4 text-right">CCC code</label>
+	                        	<div class="col-md-4">
+	                            	<input type="text" name="ccc_code" id="ccc_code" class="input-md form-control" placeholder="CCC code" maxlength="1000">
+	                            	<div class="help-block with-errors"></div>
+	                        	</div>
+	                        </div>
+
+	                        <div class="mb-10  form-group row">
+	                        	<label for="psw" class="col-md-4 text-right">Password</label>
+	                        	<div class="col-md-4">
+	                            	<input type="password" name="psw" id="psw" class="input-md form-control" placeholder="Password" maxlength="1000">
+	                            	<div class="help-block with-errors"></div>
+	                        	</div>
+	                        </div>
+						</div>
+
+						<p>Growthfountain charges $99 for the automated Form C generation.  This will be credited toward additional charges for required background checks</p>
+
+						<div class="mb-10  form-group row">
+                        	<label for="cc_numb" class="col-md-4 text-right">Credit Card Number</label>
+                        	<div class="col-md-4">
+                            	<input type="text" name="cc_numb" id="cc_numb" class="input-md form-control" placeholder="Credit Card Number" maxlength="1000">
+                            	<div class="help-block with-errors"></div>
+                        	</div>
+                        </div>
+
+                        <div class="mb-10  form-group row">
+                        	<label for="expiration" class="col-md-4 text-right">Expiration</label>
+                        	<div class="col-md-4">
+                            	<input type="text" name="expiration" id="expiration" class="input-md form-control" placeholder="Expiration" maxlength="1000">
+                            	<div class="help-block with-errors"></div>
+                        	</div>
+                        </div>
+
+                        <div class="mb-10  form-group row">
+                        	<label for="name_on_credit" class="col-md-4 text-right">Name on Credit Card</label>
+                        	<div class="col-md-4">
+                            	<input type="text" name="name_on_credit" id="name_on_credit" class="input-md form-control" placeholder="Name on Credit Card" maxlength="1000">
+                            	<div class="help-block with-errors"></div>
+                        	</div>
+                        </div>
+
+                        <div class="mb-10  form-group row">
+                        	<label for="contr" class="col-md-4 text-right">Contract for conducting your campaign on GrowthFountain</label>
+                        	<div class="col-md-8">
+                            	<input type="text" name="contr" id="contr" class="input-md form-control" placeholder="Contract for conducting your campaign on GrowthFountain" maxlength="1000">
+                            	<div class="help-block with-errors"></div>
+                        	</div>
+                        </div>
+
+                        <div class="mb-10  form-group row">
+                        	<label for="el_sign_1" class="col-md-3 col-md-offset-1 text-right">Electronic Signature</label>
+                        	<div class="col-md-4">
+                            	<input type="text" name="el_sign_1" id="el_sign_1" class="input-md form-control" placeholder="Electronic Signature" maxlength="1000">
+                            	<div class="help-block with-errors"></div>
+                        	</div>
+
+                        	<div class="col-md-4">
+                            	<div class="controls text-center submit-field pull-left">
+									<button type="submit" class="submit_btn btn btn-mod btn-medium btn-round"> Sumbit </button>
+								</div>
+                        	</div>
+                        </div>
+
+                        <div class="mb-10  form-group row">
+                        	<label for="signat" class="uppercase col-md-3 col-md-offset-1 text-right"> Signatures</label>
+                        	<div class="col-md-4">
+                            	<input type="text" name="signat" id="signat" class="input-md form-control" placeholder="Signature" maxlength="1000">
+                            	<div class="help-block with-errors"></div>
+                        	</div>
+                        </div>
+
+						<div class="row mb-20">
+							<div class="col-md-12">
+		                        <div class="mt-15">
+		                        	<label for="mat_info">This Form shall be signed by the issuer, its principal executive officer or officers, its principal financial officer, its controller or principal accounting officer and at least a majority of the board of directors or persons performing similar functions. 
+Intentional misstatements of omissions of facts constitute federal criminal violations.</label>
+	                            	<textarea name="mat_info" id="mat_info" class="input-md form-control" rows="4" placeholder="" readonly="true" maxlength="8000">This Form shall be signed by the issuer, its principal executive officer or officers, its principal financial officer, its controller or principal accounting officer and at least a majority of the board of directors or persons performing similar functions. 
+Intentional misstatements of omissions of facts constitute federal criminal violations.</textarea>
+		                        </div>
+							</div>
+						</div>
+
+						<div class="mb-10  form-group row">
+                        	<label for="issuer" class="uppercase col-md-3 col-md-offset-1 text-right"> (Issuer)</label>
+                        	<div class="col-md-4">
+                            	<input type="text" name="issuer" id="issuer" class="input-md form-control" placeholder="Issuer" maxlength="1000">
+                            	<div class="help-block with-errors"></div>
+                        	</div>
+                        </div>
+
+                        <div class="mb-10  form-group row">
+                        	<label for="elec_sign" class="uppercase col-md-3 col-md-offset-1 text-right"> Electronic Signature</label>
+                        	<div class="col-md-4">
+                            	<input type="text" name="elec_sign" id="elec_sign" class="input-md form-control" placeholder="Electronic Signature" maxlength="1000">
+                            	<div class="help-block with-errors"></div>
+                        	</div>
+                        </div>
+
+                        <div class="mb-10  form-group row">
+                        	<label for="typ_name" class="uppercase col-md-3 col-md-offset-1 text-right">Typed Name</label>
+                        	<div class="col-md-4">
+                            	<input type="text" name="typ_name" id="typ_name" class="input-md form-control" placeholder="Typed Name" maxlength="1000">
+                            	<div class="help-block with-errors"></div>
+                        	</div>
+                        </div>
+
+                        <div class="mb-10  form-group row">
+                        	<label for="title" class="uppercase col-md-3 col-md-offset-1 text-right">Title</label>
+                        	<div class="col-md-4">
+                            	<input type="text" name="title" id="title" class="input-md form-control" placeholder="Title" maxlength="1000">
+                            	<div class="help-block with-errors"></div>
+                        	</div>
+                        </div>
+
+                        <div class="inputs-columns">
+                        	<div class="row">
+                        		<div class="col-md-3 col-md-offset-1">
+                        			<div class=" form-group">
+			                        	<label for="ceo" class="visible-xs visible-sm">CEO</label>
+			                        	<div class="">
+			                            	<input type="text" name="ceo" id="ceo" class="input-md form-control" placeholder="CEO" maxlength="1000">
+			                            	<div class="help-block with-errors"></div>
+			                        	</div>
+                        			</div>
+									
+									<div class=" form-group">
+			                        	<label for="e_sign_ceo" class="visible-xs visible-sm">Electronic Signature</label>
+			                        	<div class="">
+			                            	<input type="text" name="e_sign_ceo" id="e_sign_ceo" class="input-md form-control" placeholder="Electronic Signature" maxlength="1000">
+			                            	<div class="help-block with-errors"></div>
+			                        	</div>
+									</div>
+
+									<div class=" form-group">
+			                        	<label for="date_ceo" class="visible-xs visible-sm">Date</label>
+			                        	<div class="">
+			                            	<input type="text" name="date_ceo" id="date_ceo" class="input-md form-control" placeholder="Date" maxlength="1000">
+			                            	<div class="help-block with-errors"></div>
+			                        	</div>
+									</div>
+
+		                        	<div class="mb-10 controls text-center submit-field clearfix">
+										<button type="submit" class="pull-left submit_btn btn btn-mod btn-medium btn-round"> Sumbit </button>
+									</div>
+
+                        		</div>
+                        		<div class="col-md-3">
+                        			<div class=" form-group">
+	                        			<label for="cfo" class="visible-xs visible-sm">CFO</label>
+			                        	<div class="">
+			                            	<input type="text" name="cfo" id="cfo" class="input-md form-control" placeholder="CFO" maxlength="1000">
+			                            	<div class="help-block with-errors"></div>
+			                        	</div>
+									</div>
+
+									<div class=" form-group">
+			                        	<label for="e_sign_cfo" class="visible-xs visible-sm">Electronic Signature</label>
+			                        	<div class="">
+			                            	<input type="text" name="e_sign_cfo" id="e_sign_cfo" class="input-md form-control" placeholder="Electronic Signature" maxlength="1000">
+			                            	<div class="help-block with-errors"></div>
+			                        	</div>
+									</div>
+
+									<div class=" form-group">
+			                        	<label for="date_cfo" class="visible-xs visible-sm">Date</label>
+			                        	<div class="">
+			                            	<input type="text" name="date_cfo" id="date_cfo" class="input-md form-control" placeholder="Date" maxlength="1000">
+			                            	<div class="help-block with-errors"></div>
+			                        	</div>
+									</div>
+		                        	<div class="mb-10 controls text-center submit-field clearfix">
+										<button type="submit" class="pull-left submit_btn btn btn-mod btn-medium btn-round"> Sumbit </button>
+									</div>
+                        		</div>
+                        		<div class="col-md-3">
+                        			<div class=" form-group">
+	                        			<label for="board_memb" class="visible-xs visible-sm">Board Member</label>
+			                        	<div class="">
+			                            	<input type="text" name="board_memb" id="board_memb" class="input-md form-control" placeholder="Board Member" maxlength="1000">
+			                            	<div class="help-block with-errors"></div>
+			                        	</div>
+									</div>
+									
+									<div class=" form-group">
+			                        	<label for="e_sign_cfo" class="visible-xs visible-sm">Electronic Signature</label>
+			                        	<div class="">
+			                            	<input type="text" name="e_sign_bm" id="e_sign_bm" class="input-md form-control" placeholder="Electronic Signature" maxlength="1000">
+			                            	<div class="help-block with-errors"></div>
+			                        	</div>
+									</div>
+
+									<div class=" form-group">
+			                        	<label for="date_cfo" class="visible-xs visible-sm">Date</label>
+			                        	<div class="">
+			                            	<input type="text" name="date_bm" id="date_bm" class="input-md form-control" placeholder="Date" maxlength="1000">
+			                            	<div class="help-block with-errors"></div>
+			                        	</div>
+									</div>
+		                        	<div class="mb-10 controls text-center submit-field clearfix">
+										<button type="submit" class="pull-left submit_btn btn btn-mod btn-medium btn-round"> Sumbit </button>
+									</div>
+                        		</div>
+                        		<div class="col-md-2">
+                        			<a href="" class="dell">Del</a><a href="" class="add">Add</a>
+                        		</div>
+                        		<!-- <div class="col-md-2">
+                        			
+                        		</div>
+                        		<div class="col-md-2">
+                        			
+                        		</div> -->
+                        	</div>
+                        </div>
+
+                        <div class="agreg_raise-block mt-30">
+
+	                        <div class=" form-group">
+	                        	<label for="date_tax_return" class="col-md-4  text-right">Date of Most Recent Tax Return</label>
+	                        	<div class="col-md-3">
+	                            	<input type="text" name="date_tax_return" id="date_tax_return" class="input-md form-control" placeholder="Date of Most Recent Tax Return" maxlength="1000">
+	                            	<div class="help-block with-errors"></div>
+	                        	</div>
+	                        	<div class="col-md-3">
+	                            	<input type="date" name="chose_date_tax_return" id="chose_date_tax_return" class="input-md form-control" placeholder="">
+	                            	<div class="help-block with-errors"></div>
+	                        	</div>
+							</div>
+
+							<div class=" form-group row">
+	                        	<label for="certification" class="col-md-4  text-right">A principal executive officer must provide the following certification:</label>
+	                        	<div class="col-md-6">
+	                            	<input type="text" name="certification" id="certification" class="input-md form-control" placeholder="A principal executive officer must provide the following certification:" maxlength="1000">
+	                            	<div class="help-block with-errors"></div>
+	                        	</div>
+							</div>
+
+							<div class=" form-group row">
+								<div class="col-md-1 col-md-offset-3 text-right">I, </div>
+	                        	<!-- <label for="certification" class="col-md-4  text-right">A principal executive officer must provide the following certification:</label> -->
+	                        	<div class="col-md-4">
+	                            	<input type="text" name="certification" id="certification" class="input-md form-control" placeholder="identify the certifying individual" maxlength="1000">
+	                            	<div class="help-block with-errors"></div>
+	                        	</div>
+	                        	<div class="col-md-2">certify that: </div>
+							</div>
+
+							<div class="row mb-20">
+								<div class="col-md-12">
+			                        <div class="mt-15">
+			                        	<label for="agreg_raise_info">(1) The financial statements of identify the issuer included in this Form are true and complete in all material respects, and
+        (2) The tax return information of identify the issuer included in this Form reflects accurately the information reported on the tax return for identify the issuer filed for the fiscal year ended date of most recent tax return</label>
+		                            	<textarea name="agreg_raise_info" id="agreg_raise_info" class="input-md form-control" rows="5" placeholder="" readonly="true" maxlength="8000" readonly="true">(1) The financial statements of identify the issuer included in this Form are true and complete in all material respects, and
+(2) The tax return information of identify the issuer included in this Form reflects accurately the information reported on the tax return for identify the issuer filed for the fiscal year ended date of most recent tax return</textarea>
+			                        </div>
+								</div>
+							</div>
+
+							<div class=" form-group row">
+	                        	<label for="e_sign_riase" class="col-md-4 text-right">Electronic Signature</label>
+	                        	<div class="col-md-4">
+	                            	<input type="text" name="e_sign_riase" id="e_sign_riase" class="input-md form-control" placeholder="Electronic Signature" maxlength="1000">
+	                            	<div class="help-block with-errors"></div>
+	                        	</div>
+							</div>
+
+							<div class=" form-group row">
+	                        	<label for="date_raise" class="col-md-4 text-right">Date</label>
+	                        	<div class="col-md-4">
+	                            	<input type="text" name="date_raise" id="date_raise" class="input-md form-control" placeholder="Date" maxlength="1000">
+	                            	<div class="help-block with-errors"></div>
+	                        	</div>
+							</div>
 							<div class="col-md-4 col-md-offset-4">
-								<div class="mb-20 mb-md-10">
-	                                <label class="radio-inline mr">
-	                                    <input type="radio" name="position" id="dir_position" value="1">Director
-	                                </label>
-	                            </div>
+		                    	<div class="mb-10 controls text-center submit-field clearfix">
+									<button type="submit" class="pull-left submit_btn btn btn-mod btn-medium btn-round"> Sumbit </button>
+								</div>
 							</div>
-						</div>
-
-						<div class="mb-10  form-group row">
-                        	<label for="board_service_start" class="col-md-4 text-right mr-0">Board Service Start Date </label>
-                        	<div class="col-md-4">
-                            	<input type="text" name="board_service_start" id="board_service_start" class="input-md form-control" placeholder="Board Service Start Date" maxlength="100">
-                            	<div class="help-block with-errors"></div>
-                        	</div>
-                        </div>
-
-                        <div class="mb-10  form-group row">
-                        	<label for="board_service_end" class="col-md-4 text-right mr-0">Board Service End Date </label>
-                        	<div class="col-md-4">
-                            	<input type="text" name="board_service_end" id="board_service_end" class="input-md form-control" placeholder="Board Service End Date" maxlength="100">
-                            	<div class="help-block with-errors"></div>
-                        	</div>
-                        </div>
-
-                        <div class="mb-10  form-group row">
-                        	<label for="principal_occupation" class="col-md-4 text-right mr-0">Principal Occupation </label>
-                        	<div class="col-md-4">
-                            	<input type="text" name="principal_occupation" id="principal_occupation" class="input-md form-control" placeholder="Principal Occupation" maxlength="100">
-                            	<div class="help-block with-errors"></div>
-                        	</div>
-                        </div>
-
-                        <div class="mb-10  form-group row">
-                        	<label for="principal_bussin" class="col-md-4 text-right mr-0">Employer and Principal Business </label>
-                        	<div class="col-md-4">
-                            	<input type="text" name="principal_bussin" id="principal_bussin" class="input-md form-control" placeholder="Employer and Principal Business" maxlength="100">
-                            	<div class="help-block with-errors"></div>
-                        	</div>
-                        </div>
-
-                        <div class="mb-10  form-group row">
-                        	<label for="empl_start_date" class="col-md-4 text-right mr-0">Employer Start Date </label>
-                        	<div class="col-md-4">
-                            	<input type="text" name="empl_start_date" id="empl_start_date" class="input-md form-control" placeholder="Employer Start Date" maxlength="100">
-                            	<div class="help-block with-errors"></div>
-                        	</div>
-                        </div>
-
-                        <div class="mb-10  form-group row">
-                        	<label for="empl_end_date" class="col-md-4 text-right mr-0">Employer End Date </label>
-                        	<div class="col-md-4">
-                            	<input type="text" name="empl_end_date" id="empl_end_date" class="input-md form-control" placeholder="Employer End Date" maxlength="100">
-                            	<div class="help-block with-errors"></div>
-                        	</div>
-
-                        	<div class="col-md-4">
-								<p class="bordered mt-0 mb-0">
-									Why do we ask?  These affinity based questions can help us share your campaign with potential investors with similar backgrounds
-								</p>
-							</div>
-                        </div>
-
-                        <div class="row">
-							<div class="col-md-4 col-md-offset-4 ">
-								<div class="mb-20 mb-md-10">
-	                                <label class="radio-inline">
-	                                    <input type="radio" name="position" id="offic_position" value="2">Officer
-	                                </label>
-	                            </div>
-							</div>
-						</div>
-
-                        <div class="mb-10  form-group row">
-                        	<label for="title_respons" class="col-md-4 text-right mr-0">Title and Responsibilities</label>
-                        	<div class="col-md-4">
-                            	<input type="text" name="title_respons" id="title_respons" class="input-md form-control" placeholder="Title and Responsibilities" maxlength="100">
-                            	<div class="help-block with-errors"></div>
-                        	</div>
-                        </div>
-
-                        <div class="mb-10  form-group row">
-                        	<label for="start_date" class="col-md-4 text-right mr-0">Start Date</label>
-                        	<div class="col-md-4">
-                            	<input type="text" name="start_date" id="start_date" class="input-md form-control" placeholder="Start Date" maxlength="100">
-                            	<div class="help-block with-errors"></div>
-                        	</div>
-                        </div>
-
-                        <div class="mb-10  form-group row">
-                        	<label for="end_date" class="col-md-4 text-right mr-0">End Date</label>
-                        	<div class="col-md-4">
-                            	<input type="text" name="end_date" id="end_date" class="input-md form-control" placeholder="End Date" maxlength="100">
-                            	<div class="help-block with-errors"></div>
-                        	</div>
-                        </div>
-
-                        <div class="mb-10  form-group row">
-                        	<label for="town" class="col-md-4 text-right mr-0">What town are you from?</label>
-                        	<div class="col-md-4">
-                            	<input type="text" name="town" id="town" class="input-md form-control" placeholder="What town are you from?" maxlength="100">
-                            	<div class="help-block with-errors"></div>
-                        	</div>
-                        </div>
-
-                        <div class="mb-10  form-group row">
-                        	<label for="college" class="col-md-4 text-right mr-0">What college did you go to?</label>
-                        	<div class="col-md-4">
-                            	<input type="text" name="college" id="college" class="input-md form-control" placeholder="What college did you go to?" maxlength="100">
-                            	<div class="help-block with-errors"></div>
-                        	</div>
-                        </div>
-
-
-                        <div class="mb-10 mt-40 mt-xs-10 row">
-                        	<div class="col-sm-12 text-center">
-                        		<h5>We need information for last 3 years</h5>
-                        	</div>
-                        </div>
-
-                        <div class="mb-10  form-group row">
-                        	<label for="title_respons_1" class="col-md-4 text-right mr-0">Title and Responsibilities</label>
-                        	<div class="col-md-4">
-                            	<input type="text" name="title_respons_1" id="title_respons_1" class="input-md form-control" placeholder="Title and Responsibilities" maxlength="100">
-                            	<div class="help-block with-errors"></div>
-                        	</div>
-                        	<div class="col-md-4">
-								<a href="" class="dell">Del</a><a href="" class="add">Add</a>
-							</div>
-                        </div>
-
-                        <div class="mb-10  form-group row">
-                        	<label for="name_princ_buss" class="col-md-4 text-right mr-0">Employer Name and Principal Business</label>
-                        	<div class="col-md-4">
-                            	<input type="text" name="name_princ_buss" id="name_princ_buss" class="input-md form-control" placeholder="Employer Name and Principal Business" maxlength="100">
-                            	<div class="help-block with-errors"></div>
-                        	</div>
-                        </div>
-
-                        <div class="mb-10  form-group row">
-                        	<label for="empl_start_date_1" class="col-md-4 text-right mr-0">Employer Start Date </label>
-                        	<div class="col-md-4">
-                            	<input type="text" name="empl_start_date_1" id="empl_start_date_1" class="input-md form-control" placeholder="Employer Start Date" maxlength="100">
-                            	<div class="help-block with-errors"></div>
-                        	</div>
-                        </div>
-
-                        <div class="mb-10  form-group row">
-                        	<label for="empl_end_date_2" class="col-md-4 text-right mr-0">Employer End Date </label>
-                        	<div class="col-md-4">
-                            	<input type="text" name="empl_end_date_2" id="empl_end_date_2" class="input-md form-control" placeholder="Employer End Date" maxlength="100">
-                            	<div class="help-block with-errors"></div>
-                        	</div>
-                        </div>
-
-                        <div class="row">
-                        	<div class="col-md-12 text-center">
-								<a href="" class="dell">Del</a><a href="" class="add">Add</a>
-                        	</div>
-                        </div>
-
-                        <div class="row mt-40 mt-sm-20 mt-xs-20">
-                        	<div class="col-md-12">
-                        		<h5>"20%+ VOTING SHAREHOLDER"</h5>
-								<p>No earlier than 120 days prior to the date of this offering, please list beneficial owners of 20% or more of issuer's outstanding voting equity securities.  To calculate total voting power, include direct/indirect shares, include the right through the exercise of options/warrants/conversion, or if securities are held by a family member, through corporations or partnerships, co-trustee, etc.  To calculate outstanding voting equity securities, assume all outstanding options are exercised and all outstanding convertible securities converted.</p>
-                        	</div>
-                        </div>
-
-
-
-						<div class="mb-10  form-group row">
-                        	<label for="first_name_1" class="col-md-4 text-right mr-0">First Name </label>
-                        	<div class="col-md-4">
-                            	<input type="text" name="first_name_1" id="first_name_1" class="input-md form-control" placeholder="First Name" maxlength="100">
-                            	<div class="help-block with-errors"></div>
-                        	</div>
-                        </div>
-
-                        <div class="mb-10  form-group row">
-                        	<label for="last_name_1" class="col-md-4 text-right mr-0">Last Name </label>
-                        	<div class="col-md-4">
-                            	<input type="text" name="last_name_2" id="last_name_2" class="input-md form-control" placeholder="Last Name" maxlength="100">
-                            	<div class="help-block with-errors"></div>
-                        	</div>
-
-                        </div>
-
-                        <div class="mb-10  form-group row">
-                        	<label for="email_2" class="col-md-4 text-right mr-0">Email </label>
-                        	<div class="col-md-4">
-                            	<input type="text" name="email_2" id="email_2" class="input-md form-control" placeholder="email" maxlength="100">
-                            	<div class="help-block with-errors"></div>
-                        	</div>
-                        </div>
-
-                        <div class="mb-10  form-group row">
-                        	<label for="number_of_shares" class="col-md-4 text-right mr-0">Number Of Shares </label>
-                        	<div class="col-md-4">
-                            	<input type="text" name="number_of_shares" id="number_of_shares" class="input-md form-control" placeholder="Number Of Shares" maxlength="100">
-                            	<div class="help-block with-errors"></div>
-                        	</div>
-                        </div>
-
-                        <div class="mb-10  form-group row">
-                        	<label for="class_secur" class="col-md-4 text-right mr-0">Class of Securities</label>
-                        	<div class="col-md-4">
-                            	<input type="text" name="class_secur" id="class_secur" class="input-md form-control" placeholder="Number Of Shares" maxlength="100">
-                            	<div class="help-block with-errors"></div>
-                        	</div>
-                        </div>
-
-						<div class="mb-10  form-group row">
-                        	<label for="vote_power" class="col-md-4 text-right mr-0">% of Voting Power Prior to Offering</label>
-                        	<div class="col-md-4">
-                            	<input type="text" name="vote_power" id="vote_power" class="input-md form-control" placeholder="% of Voting Power Prior to Offering" maxlength="100">
-                            	<div class="help-block with-errors"></div>
-                        	</div>
                         </div>
 
 						<div class="row">
@@ -745,7 +818,7 @@
 		</div>
 
 		<!-- <script src="js/jquery.min.js" type="text/javascript"></script> -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/pages.js"></script>
 		<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script> -->

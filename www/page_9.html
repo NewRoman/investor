@@ -303,273 +303,118 @@
 
 					<div class="clearfix"></div>
 
-					<form method="post" class="form-body wpcf7-form clearfix form-page-5 form-pages" action="" role="form">
+					<form method="post" class="form-body wpcf7-form clearfix form-page-9 form-pages" action="" role="form">
 
-						<div class="mb-10  form-group row">
-                        	<label for="employees_count" class="col-md-4 text-right mr-0">How many employees do you have?</label>
-                        	<div class="col-md-4">
-                            	<input type="text" name="employees_count" id="employees_count" class="input-md form-control" placeholder="Legal Name of Issuer" maxlength="100">
-                            	<div class="help-block with-errors"></div>
-                        	</div>
-                        </div>
+						<div class="row mb-20">
+							<div class="col-md-12">
+		                        <div class="mt-15">
+		                        	<label for="other_securit"></label>
+	                            	<textarea name="other_securit" id="other_securit" class="input-md form-control" rows="32" placeholder="" readonly="true" maxlength="8000">Has the company or any director, officer, 20% voting shareholder or paid securities promoter been subject to:
+        
+        1. Conviction: felony or misdemeanor, within 10 years prior to this offering (5 years in the case of the company) in connection with the purchase or sale of securities, making false filings with the SEC, or arising out of the conduct of the business of an underwriter, broker, dealer, municipal securities dealer, investment adviser, funding portal or paid solicitor of purchasers of securities?
 
-                        <div class="row">
-                        	<div class="col-sm-12 text-center">
-                        		<h5 class="mt-25 mb-0">Please enter all Officers and Directors</h5>
-                        		<p class="mt-10 mb-20 text-left">OFFICER means president, vice president, secretary, treasurer or principal financial officer, comptroller or principal accounting officer, and any person routinely performing similar functions</p>
-                        	</div>
-                        </div>
+        2. Subject to court order, judgment or decree, within 5 years prior to this offering, that restrains or enjoins such person from any connection with the purchase or sale of securities, involving any false filing with the SEC, arising out of the conduct of the business of an underwriter, broker, dealer, municipal securities dealer, investment adviser, funding portal or paid solicitor of securities?
 
-                        <div class="mb-10  form-group row">
-                        	<label for="first_name" class="col-md-4 text-right mr-0">First Name </label>
-                        	<div class="col-md-4">
-                            	<input type="text" name="first_name" id="first_name" class="input-md form-control" placeholder="First Name" maxlength="100">
-                            	<div class="help-block with-errors"></div>
-                        	</div>
-                        </div>
+        3. Subject to a final order of a state securities commission or similar agency or bank, savings associations, credit union, state insurance commission, federal banking agency, CFTC or NCUA that, at the time of this offering, bars the person from association with an entity regulated by such commission, engaging in the business of securities, insurance or banking, engaging in savings association or credit union activities, or constitutes a final order based on a violation of any law or regulation that prohibits fraudulent, manipulative or deceptive conduct and for which the order was entered within 10 years prior to this offering?
 
-                        <div class="mb-10  form-group row">
-                        	<label for="last_name" class="col-md-4 text-right mr-0">Last Name </label>
-                        	<div class="col-md-4">
-                            	<input type="text" name="last_name" id="last_name" class="input-md form-control" placeholder="Last Name" maxlength="100">
-                            	<div class="help-block with-errors"></div>
-                        	</div>
+        4. Subject to an SEC order pursuant to Section 15(b) or 15B(c) of the Exchange Act or Section 203(e) or (f) of the Investment Advisers Act of 1940 that, at the time of this offering, suspends or revokes such person%u2019s registration as a broker, dealer, municipal securities dealer, investment adviser or funding portal, places limitations on the activities, functions or operations of such person, bars such person from being associated with any entity or from participating in the offering of any penny stock?
 
-                        </div>
+        5. Subject to an SEC order within 5 years prior to this offering, orders the person to cease and desist from violating any scienter-based anti-fraud provision of federal securities laws or Section 5 of the Securities Act?
 
-                        <div class="mb-10  form-group row">
-                        	<label for="email" class="col-md-4 text-right mr-0">Email </label>
-                        	<div class="col-md-4">
-                            	<input type="text" name="email" id="email" class="input-md form-control" placeholder="email" maxlength="100">
-                            	<div class="help-block with-errors"></div>
-                        	</div>
+        6. Suspended or expelled from membership in, or barred from association with a member of a registered national securities exchange or association for conduct inconsistent with just and equitable principles of trade?
 
-                        	<div class="col-md-4">
-								<p class="bordered mt-0 mb-0">
-									Changed roles within the Company?  Please list all positions and offices with the Company held and the period of time in which you served in the position or office
-								</p>
+        7. Subject to a refusal order, stop order or suspended exemption within 5 years prior to this offering, with regards to a Regulation A offering statement, or was any such person, at the time of filing, the subject of an investigation or proceeding to determine whether a stop order or suspension should be issued?
+
+        8. Subject to a United States Postal Service false representation order within 5 years prior to this offering, or is such person subject to a temporary restraining order or preliminary injunction with respect to conduct alleged by the United States Postal Service to constitute a scheme or device for obtaining money or property through the mail by means of false representations?</textarea>
+		                        </div>
 							</div>
-                        </div>
+						</div>
 
-                        <div class="row">
-							<div class="col-md-4 col-md-offset-4">
-								<div class="mb-20 mb-md-10">
-	                                <label class="radio-inline mr">
-	                                    <input type="radio" name="position" id="dir_position" value="1">Director
-	                                </label>
-	                            </div>
+						<div class="if-yes-block mb-30">
+
+							<div class="row">
+								<div class="col-sm-2 col-md-1 col-md-offset-1">
+									<div class="mb-20 mb-md-10">
+										<span class=""></span>
+										<div class="separate"></div>
+		                                <label for="yes_answ" class="full-width mt-15">
+		                                    <input type="radio" name="yes_no_answ" id="yes_answ" value="1" data-target="out-secur">Yes
+		                                </label>
+		                                <label class="full-width">
+		                                    <input type="radio" name="yes_no_answ" id="no_answ" value="2" data-target="out-secur">No
+		                                </label>
+		                            </div>
+								</div>
+
+								<div class="col-sm-10 explain-yes">
+									<div class="mb-10  form-group row">
+			                        	<label for="if_yes" class="col-sm-4 text-right mr-0">If Yes, please explain:</label>
+			                        	<div class="col-sm-8">
+			                            	<input type="text" name="if_yes" id="if_yes" class="input-md form-control" placeholder="If Yes, please explain:" maxlength="1000">
+			                            	<div class="help-block with-errors"></div>
+			                        	</div>
+			                        </div>
+								</div>
 							</div>
 						</div>
 
 						<div class="mb-10  form-group row">
-                        	<label for="board_service_start" class="col-md-4 text-right mr-0">Board Service Start Date </label>
-                        	<div class="col-md-4">
-                            	<input type="text" name="board_service_start" id="board_service_start" class="input-md form-control" placeholder="Board Service Start Date" maxlength="100">
-                            	<div class="help-block with-errors"></div>
-                        	</div>
-                        </div>
-
-                        <div class="mb-10  form-group row">
-                        	<label for="board_service_end" class="col-md-4 text-right mr-0">Board Service End Date </label>
-                        	<div class="col-md-4">
-                            	<input type="text" name="board_service_end" id="board_service_end" class="input-md form-control" placeholder="Board Service End Date" maxlength="100">
-                            	<div class="help-block with-errors"></div>
-                        	</div>
-                        </div>
-
-                        <div class="mb-10  form-group row">
-                        	<label for="principal_occupation" class="col-md-4 text-right mr-0">Principal Occupation </label>
-                        	<div class="col-md-4">
-                            	<input type="text" name="principal_occupation" id="principal_occupation" class="input-md form-control" placeholder="Principal Occupation" maxlength="100">
-                            	<div class="help-block with-errors"></div>
-                        	</div>
-                        </div>
-
-                        <div class="mb-10  form-group row">
-                        	<label for="principal_bussin" class="col-md-4 text-right mr-0">Employer and Principal Business </label>
-                        	<div class="col-md-4">
-                            	<input type="text" name="principal_bussin" id="principal_bussin" class="input-md form-control" placeholder="Employer and Principal Business" maxlength="100">
-                            	<div class="help-block with-errors"></div>
-                        	</div>
-                        </div>
-
-                        <div class="mb-10  form-group row">
-                        	<label for="empl_start_date" class="col-md-4 text-right mr-0">Employer Start Date </label>
-                        	<div class="col-md-4">
-                            	<input type="text" name="empl_start_date" id="empl_start_date" class="input-md form-control" placeholder="Employer Start Date" maxlength="100">
-                            	<div class="help-block with-errors"></div>
-                        	</div>
-                        </div>
-
-                        <div class="mb-10  form-group row">
-                        	<label for="empl_end_date" class="col-md-4 text-right mr-0">Employer End Date </label>
-                        	<div class="col-md-4">
-                            	<input type="text" name="empl_end_date" id="empl_end_date" class="input-md form-control" placeholder="Employer End Date" maxlength="100">
-                            	<div class="help-block with-errors"></div>
-                        	</div>
-
-                        	<div class="col-md-4">
-								<p class="bordered mt-0 mb-0">
-									Why do we ask?  These affinity based questions can help us share your campaign with potential investors with similar backgrounds
-								</p>
-							</div>
-                        </div>
-
-                        <div class="row">
-							<div class="col-md-4 col-md-offset-4 ">
-								<div class="mb-20 mb-md-10">
-	                                <label class="radio-inline">
-	                                    <input type="radio" name="position" id="offic_position" value="2">Officer
-	                                </label>
-	                            </div>
-							</div>
-						</div>
-
-                        <div class="mb-10  form-group row">
-                        	<label for="title_respons" class="col-md-4 text-right mr-0">Title and Responsibilities</label>
-                        	<div class="col-md-4">
-                            	<input type="text" name="title_respons" id="title_respons" class="input-md form-control" placeholder="Title and Responsibilities" maxlength="100">
-                            	<div class="help-block with-errors"></div>
-                        	</div>
-                        </div>
-
-                        <div class="mb-10  form-group row">
-                        	<label for="start_date" class="col-md-4 text-right mr-0">Start Date</label>
-                        	<div class="col-md-4">
-                            	<input type="text" name="start_date" id="start_date" class="input-md form-control" placeholder="Start Date" maxlength="100">
-                            	<div class="help-block with-errors"></div>
-                        	</div>
-                        </div>
-
-                        <div class="mb-10  form-group row">
-                        	<label for="end_date" class="col-md-4 text-right mr-0">End Date</label>
-                        	<div class="col-md-4">
-                            	<input type="text" name="end_date" id="end_date" class="input-md form-control" placeholder="End Date" maxlength="100">
-                            	<div class="help-block with-errors"></div>
-                        	</div>
-                        </div>
-
-                        <div class="mb-10  form-group row">
-                        	<label for="town" class="col-md-4 text-right mr-0">What town are you from?</label>
-                        	<div class="col-md-4">
-                            	<input type="text" name="town" id="town" class="input-md form-control" placeholder="What town are you from?" maxlength="100">
-                            	<div class="help-block with-errors"></div>
-                        	</div>
-                        </div>
-
-                        <div class="mb-10  form-group row">
-                        	<label for="college" class="col-md-4 text-right mr-0">What college did you go to?</label>
-                        	<div class="col-md-4">
-                            	<input type="text" name="college" id="college" class="input-md form-control" placeholder="What college did you go to?" maxlength="100">
-                            	<div class="help-block with-errors"></div>
-                        	</div>
-                        </div>
-
-
-                        <div class="mb-10 mt-40 mt-xs-10 row">
-                        	<div class="col-sm-12 text-center">
-                        		<h5>We need information for last 3 years</h5>
-                        	</div>
-                        </div>
-
-                        <div class="mb-10  form-group row">
-                        	<label for="title_respons_1" class="col-md-4 text-right mr-0">Title and Responsibilities</label>
-                        	<div class="col-md-4">
-                            	<input type="text" name="title_respons_1" id="title_respons_1" class="input-md form-control" placeholder="Title and Responsibilities" maxlength="100">
-                            	<div class="help-block with-errors"></div>
-                        	</div>
-                        	<div class="col-md-4">
-								<a href="" class="dell">Del</a><a href="" class="add">Add</a>
-							</div>
-                        </div>
-
-                        <div class="mb-10  form-group row">
-                        	<label for="name_princ_buss" class="col-md-4 text-right mr-0">Employer Name and Principal Business</label>
-                        	<div class="col-md-4">
-                            	<input type="text" name="name_princ_buss" id="name_princ_buss" class="input-md form-control" placeholder="Employer Name and Principal Business" maxlength="100">
-                            	<div class="help-block with-errors"></div>
-                        	</div>
-                        </div>
-
-                        <div class="mb-10  form-group row">
-                        	<label for="empl_start_date_1" class="col-md-4 text-right mr-0">Employer Start Date </label>
-                        	<div class="col-md-4">
-                            	<input type="text" name="empl_start_date_1" id="empl_start_date_1" class="input-md form-control" placeholder="Employer Start Date" maxlength="100">
-                            	<div class="help-block with-errors"></div>
-                        	</div>
-                        </div>
-
-                        <div class="mb-10  form-group row">
-                        	<label for="empl_end_date_2" class="col-md-4 text-right mr-0">Employer End Date </label>
-                        	<div class="col-md-4">
-                            	<input type="text" name="empl_end_date_2" id="empl_end_date_2" class="input-md form-control" placeholder="Employer End Date" maxlength="100">
-                            	<div class="help-block with-errors"></div>
-                        	</div>
-                        </div>
-
-                        <div class="row">
-                        	<div class="col-md-12 text-center">
-								<a href="" class="dell">Del</a><a href="" class="add">Add</a>
-                        	</div>
-                        </div>
-
-                        <div class="row mt-40 mt-sm-20 mt-xs-20">
+                        	<label for="in_addit" class="col-md-12 ">In addition to the information expressly required to be included in this Form, include:</label>
                         	<div class="col-md-12">
-                        		<h5>"20%+ VOTING SHAREHOLDER"</h5>
-								<p>No earlier than 120 days prior to the date of this offering, please list beneficial owners of 20% or more of issuer's outstanding voting equity securities.  To calculate total voting power, include direct/indirect shares, include the right through the exercise of options/warrants/conversion, or if securities are held by a family member, through corporations or partnerships, co-trustee, etc.  To calculate outstanding voting equity securities, assume all outstanding options are exercised and all outstanding convertible securities converted.</p>
-                        	</div>
-                        </div>
-
-
-
-						<div class="mb-10  form-group row">
-                        	<label for="first_name_1" class="col-md-4 text-right mr-0">First Name </label>
-                        	<div class="col-md-4">
-                            	<input type="text" name="first_name_1" id="first_name_1" class="input-md form-control" placeholder="First Name" maxlength="100">
+                            	<input type="text" name="in_addit" id="in_addit" class="input-md form-control" placeholder="In addition to the information expressly required to be included in this Form, include:" maxlength="1000">
                             	<div class="help-block with-errors"></div>
                         	</div>
                         </div>
 
-                        <div class="mb-10  form-group row">
-                        	<label for="last_name_1" class="col-md-4 text-right mr-0">Last Name </label>
-                        	<div class="col-md-4">
-                            	<input type="text" name="last_name_2" id="last_name_2" class="input-md form-control" placeholder="Last Name" maxlength="100">
-                            	<div class="help-block with-errors"></div>
-                        	</div>
+						<div class="row mb-20">
+							<div class="col-md-12">
+		                        <div class="mt-15">
+		                        	<label for="mat_info">Such further material information, if any, as may be necessary to make the required statements, in the light of the circumstances under which they are made, not misleading</label>
+	                            	<textarea name="mat_info" id="mat_info" class="input-md form-control" rows="7" placeholder="(1) Such further material information, if any, as may be necessary to make the required statements, in the light of the circumstances under which they are made, not misleading" maxlength="8000"></textarea>
+		                        </div>
+							</div>
+						</div>
 
-                        </div>
+						<div class="row mb-20">
+							<div class="col-md-12">
+		                        <div class="mt-15">
+		                        	<label for="format_info">If you've provided any inforatmion in a format, media or other means not able to be reflected in text or pdf, please include here: (a) a description of the material content of such information; (b) a description of the format in which such disclosure is presented; and (c) in the case of disclosure in video, audio or other dynamic media or format, a transcript or description of such disclosure.</label>
+	                            	<textarea name="format_info" id="format_info" class="input-md form-control" rows="10" placeholder="(2) If you've provided any inforatmion in a format, media or other means not able to be reflected in text or pdf, please include here: (a) a description of the material content of such information; (b) a description of the format in which such disclosure is presented; and (c) in the case of disclosure in video, audio or other dynamic media or format, a transcript or description of such disclosure." maxlength="8000"></textarea>
+		                        </div>
+							</div>
+						</div>
 
-                        <div class="mb-10  form-group row">
-                        	<label for="email_2" class="col-md-4 text-right mr-0">Email </label>
-                        	<div class="col-md-4">
-                            	<input type="text" name="email_2" id="email_2" class="input-md form-control" placeholder="email" maxlength="100">
-                            	<div class="help-block with-errors"></div>
-                        	</div>
-                        </div>
-
-                        <div class="mb-10  form-group row">
-                        	<label for="number_of_shares" class="col-md-4 text-right mr-0">Number Of Shares </label>
-                        	<div class="col-md-4">
-                            	<input type="text" name="number_of_shares" id="number_of_shares" class="input-md form-control" placeholder="Number Of Shares" maxlength="100">
-                            	<div class="help-block with-errors"></div>
-                        	</div>
-                        </div>
-
-                        <div class="mb-10  form-group row">
-                        	<label for="class_secur" class="col-md-4 text-right mr-0">Class of Securities</label>
-                        	<div class="col-md-4">
-                            	<input type="text" name="class_secur" id="class_secur" class="input-md form-control" placeholder="Number Of Shares" maxlength="100">
-                            	<div class="help-block with-errors"></div>
-                        	</div>
-                        </div>
-
-						<div class="mb-10  form-group row">
-                        	<label for="vote_power" class="col-md-4 text-right mr-0">% of Voting Power Prior to Offering</label>
-                        	<div class="col-md-4">
-                            	<input type="text" name="vote_power" id="vote_power" class="input-md form-control" placeholder="% of Voting Power Prior to Offering" maxlength="100">
-                            	<div class="help-block with-errors"></div>
-                        	</div>
-                        </div>
+						<div class="row mb-20">
+							<div class="col-md-12">
+		                        <div class="mt-15">
+		                        	<label for="format_info">The issuer must continue to comply with the ongoing reporting requirements until:
+			                        	<ul>
+			                        		<li>
+			                        			(1) the issuer is required to file reports under Section 13(a) or Section 15(d) of the Exchange Act;
+			                        		</li>
+			                        		<li>
+			                        			(2) the issuer has filed at least one annual report pursuant to Regulation Crowdfunding and has fewer than 300 holders of record and has total assets that do not exceed $10,000,000;
+			                        		</li>
+			                        		<li>
+			                        			 (3) the issuer has filed at least three annual reports pursuant to Regulation Crowdfunding;
+			                        		</li>
+			                        		<li>
+			                        			 (4) the issuer or another party repurchases all of the securities issued in reliance on Section 4(a)(6) of the Securities Act, including any payment in full of debt securities or any complete redemp- tion of redeemable securities; or
+			                        		</li>
+			                        		<li>
+			                        			(5) the issuer liquidates or dissolves its business in accordance with state law.
+			                        		</li>
+			                        	</ul>
+		                        	</label>
+	                            	<textarea name="format_info" id="format_info" class="input-md form-control" rows="10" placeholder="The issuer must continue to comply with the ongoing reporting requirements until:
+(1) the issuer is required to file reports under Section 13(a) or Section 15(d) of the Exchange Act;
+(2) the issuer has filed at least one annual report pursuant to Regulation Crowdfunding and has fewer than 300 holders of record and has total assets that do not exceed $10,000,000;
+(3) the issuer has filed at least three annual reports pursuant to Regulation Crowdfunding;
+(4) the issuer or another party repurchases all of the securities issued in reliance on Section 4(a)(6) of the Securities Act, including any payment in full of debt securities or any complete redemp- tion of redeemable securities; or
+(5) the issuer liquidates or dissolves its business in accordance with state law." maxlength="8000"></textarea>
+		                        </div>
+							</div>
+						</div>
 
 						<div class="row">
 							<div class="col-md-12">

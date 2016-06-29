@@ -102,4 +102,9 @@ $(document).ready(function(){
 
 		showRadioBlock($(this));
 	});
+
+	// script for page_10
+	$(document).on('change', '#have_cik', function(){
+		$('.already-cik-fields').toggleClass('hide');
+	});
 });
