@@ -30,7 +30,7 @@ module.exports = function (grunt) {
                 files: {
                     
                     '../css/page-styles/app.css': 'app.less',
-                    // "../css/shared.css": "../less/customize-bootstrap/shared.less"
+                    '../css/page-styles/print.css': 'pages/print.less'
 
                 }
             }

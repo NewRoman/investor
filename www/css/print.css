@@ -1,0 +1,8 @@
+@media print {
+  .page {
+    padding-top: 0;
+  }
+  .page .main-section {
+    margin-top: 0;
+  }
+}

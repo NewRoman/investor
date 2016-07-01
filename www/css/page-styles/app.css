@@ -228,3 +228,26 @@
     margin-top: 50px;
   }
 }
+.form-page-10 .colon-top {
+  margin-bottom: 35px;
+}
+.form-page-10 .main-title {
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+.form-page-10 p {
+  margin-bottom: 20px;
+}
+.form-page-10 .edit-block {
+  margin-bottom: 20px;
+}
+.form-page-10 .title-edit-block {
+  font-size: 15px;
+}
+.form-page-10 .show-input {
+  display: inline-block;
+  background-color: red;
+}
+.form-page-10 .push-to-3page {
+  height: 750px;
+}
