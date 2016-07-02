@@ -107,4 +107,45 @@ $(document).ready(function(){
 	$(document).on('change', '#have_cik', function(){
 		$('.already-cik-fields').toggleClass('hide');
 	});
+
+	// script for full-text
+	$(document).on('click', '.show-input', function(){
+		var $this = $(this),
+			inputName = $this.data('input-name'),
+			$input = $('<input type="text" name="' + inputName + '" class="inserted-input"/>');
+
+		$this.replaceWith($input);
+		$input.focus();
+	});
+
+	$(document).on('focusout', 'form_pages .inserted-input', function(){
+		var $this = $(this),
+			value = $this.val(),
+			inputName = $this.attr('name');
+
+			console.log(value);
+
+			// $.ajax({
+   //              url: ,
+   //              dataType: ,
+   //              success: function () {
+   //              }
+   //          });
+
+	});
+
+	$(document).on('change', 'form.full-text input[type="checkbox"]', function(){
+		if ($(this).closest('div').hasClass('red-bg')) {
+			$(this).closest('.red-bg').removeClass('red-bg')
+
+		} else {
+			$(this).closest('div').addClass('red-bg');
+		}
+	});
+
+	$(document).on('change', 'form.full-text input[type="radio"]', function(){
+		if ($(this).closest('div').hasClass('red-bg')) {
+			$('input[name="' + $(this).attr('name') + '"]').closest('div').removeClass('red-bg');
+		}
+	});
 });

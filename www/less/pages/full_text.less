@@ -8,26 +8,144 @@
 	}
 
 	p {
-		margin-bottom: 20px;
+		margin-bottom: 8px;
 	}
 
 	.edit-block {
-		margin-bottom: 20px;
+		margin-bottom: 25px;
+
+		h4 {
+			margin-bottom: 10px;
+		}
 	}
 
 	.title-edit-block {
-		font-size: 15px;
+		font-size: 16px;
 
+	}
+
+	.note {
+		font-weight: 600;
+		font-size: 15px;
+		line-height: 1.2;
 	}
 
 	.show-input {
 		display: inline-block;
+		padding: 0 5px;
+
+		background-color: red;
+
+		color: #FFF;
+		font-weight: 600;
+		text-decoration: underline;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	.red-bg {
+		padding: 0 5px;
 
 		background-color: red;
 	}
 
-	// заполнитель для перехода текста на новую страницу
-	.push-to-3page {
-		height: 750px;
+	.green-bg {
+		padding: 0 5px;
+
+		background-color: red;
 	}
+
+	// заполнитель для перехода текста на новую страницу 
+	// .push-to-3page {
+	// 	height: 750px;
+	// }
+	table thead {
+		background: #eee;
+	}
+
+	table {
+		max-width: 100%;
+
+		.wrap-field {
+			padding-left: 0;
+		}
+		input.inserted-input {
+			max-width: 130px;
+			width: 100%;
+		}
+	}
+
+	ul {
+		margin-left: 0;
+		padding-left: 20px;
+	}
+
+	.blue-color {
+
+		color: skyblue;
+	}
+
+	.wrap-field {
+		padding-left: 50px;
+
+		.wrap-field {
+			margin: 7px 0;
+		}
+	}
+
+	.states {
+		font-size: 17px;
+	}
+
+	.wrap-hide-input {
+		span {
+			margin-top: 10px;
+		}
+	}
+
+	.material-person-input {
+		input {
+			padding-bottom: 0;
+
+			border: none;
+			border-bottom: 1px #818181 solid; 
+			box-shadow: none;
+			border-radius: 0;
+		}
+	}
+
+	.wrap-posit {
+		margin-top: 30px;
+	}
+
+	.perc-voting {
+		td {
+			text-alighn:center;
+		}
+	}
+
+	.gen-risk-factor {
+		li {
+			margin-bottom: 20px;
+
+			font-weight: 600;
+		}
+	}
+
+	span.bad-info {
+		// display: inline-block;
+		margin-right: 20px;
+	}
+
+	[class ^= bad-info-block] {
+		.material-person-input {
+			width: 50%;
+		}
+	}
+
+
+
+
 }
