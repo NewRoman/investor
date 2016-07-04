@@ -32,11 +32,13 @@
 
 	.show-input {
 		display: inline-block;
-		padding: 0 5px;
+		padding: 0 18px 0 5px;
 
-		background-color: red;
+		background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAMAAAAolt3jAAAAXVBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC5BxTwAAAAHnRSTlMAChAXGR4gK1FUbXFze36AgoOFhomLjqutsLLT8f0bdEw9AAAAXUlEQVQIHQXBiQJCQAAFwKGD0iERZff9/2c2AwDQrDVJUi+Gge0M0L5yUwHu3+N4FcCjL6UlwLMvGRHwWUomCMzdL28Q2A/dbIEK2ScqbCfAeYVmq0mSujUAAAAA/qV7Bff38HDGAAAAAElFTkSuQmCC');
+		background-repeat: no-repeat;
+		background-size: auto 14px;
+		background-position: 100% 0;
 
-		color: #FFF;
 		font-weight: 600;
 		text-decoration: underline;
 
@@ -45,17 +47,32 @@
 		}
 	}
 
-	.red-bg {
+	.inserted-input {
+		display: none;
+		height: 21px;
 		padding: 0 5px;
 
-		background-color: red;
+		border: none;
+		border-bottom: 1px #818181 solid; 
+		box-shadow: none;
+		border-radius: 0;
+
+		&:focus {
+			outline: none;
+		}
 	}
 
-	.green-bg {
-		padding: 0 5px;
+	// .red-bg {
+	// 	padding: 0 5px;
 
-		background-color: red;
-	}
+	// 	background-color: red;
+	// }
+
+	// .green-bg {
+	// 	padding: 0 5px;
+
+	// 	background-color: red;
+	// }
 
 	// заполнитель для перехода текста на новую страницу 
 	// .push-to-3page {
@@ -100,9 +117,7 @@
 	}
 
 	.wrap-hide-input {
-		span {
-			margin-top: 10px;
-		}
+		padding-top: 10px;
 	}
 
 	.material-person-input {
@@ -113,6 +128,7 @@
 			border-bottom: 1px #818181 solid; 
 			box-shadow: none;
 			border-radius: 0;
+			outline: none;
 		}
 	}
 

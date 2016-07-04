@@ -254,22 +254,28 @@
 }
 .form-page-10 .show-input {
   display: inline-block;
-  padding: 0 5px;
-  background-color: red;
-  color: #FFF;
+  padding: 0 18px 0 5px;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAMAAAAolt3jAAAAXVBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC5BxTwAAAAHnRSTlMAChAXGR4gK1FUbXFze36AgoOFhomLjqutsLLT8f0bdEw9AAAAXUlEQVQIHQXBiQJCQAAFwKGD0iERZff9/2c2AwDQrDVJUi+Gge0M0L5yUwHu3+N4FcCjL6UlwLMvGRHwWUomCMzdL28Q2A/dbIEK2ScqbCfAeYVmq0mSujUAAAAA/qV7Bff38HDGAAAAAElFTkSuQmCC');
+  background-repeat: no-repeat;
+  background-size: auto 14px;
+  background-position: 100% 0;
   font-weight: 600;
   text-decoration: underline;
 }
 .form-page-10 .show-input:hover {
   cursor: pointer;
 }
-.form-page-10 .red-bg {
+.form-page-10 .inserted-input {
+  display: none;
+  height: 21px;
   padding: 0 5px;
-  background-color: red;
+  border: none;
+  border-bottom: 1px #818181 solid;
+  box-shadow: none;
+  border-radius: 0;
 }
-.form-page-10 .green-bg {
-  padding: 0 5px;
-  background-color: red;
+.form-page-10 .inserted-input:focus {
+  outline: none;
 }
 .form-page-10 table thead {
   background: #eee;
@@ -300,8 +306,8 @@
 .form-page-10 .states {
   font-size: 17px;
 }
-.form-page-10 .wrap-hide-input span {
-  margin-top: 10px;
+.form-page-10 .wrap-hide-input {
+  padding-top: 10px;
 }
 .form-page-10 .material-person-input input {
   padding-bottom: 0;
@@ -309,6 +315,7 @@
   border-bottom: 1px #818181 solid;
   box-shadow: none;
   border-radius: 0;
+  outline: none;
 }
 .form-page-10 .wrap-posit {
   margin-top: 30px;

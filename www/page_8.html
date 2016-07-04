@@ -309,11 +309,11 @@
 							<div class="col-md-10 col-md-offset-2">
 								<div class="mb-20 mb-md-10">
 									<span class="mb-5">Do you have any business loans or debt?</span><div class="separate"></div>
-	                                <label class="full-width mt-15">
-	                                    <input type="radio" name="out_secur" id="yes_out_secur" value="1" data-target="out-secur">Yes
+	                                <label class="full-width mt-15 out-secur" data-target="out-secur">
+	                                    <input type="radio" name="out_secur" id="yes_out_secur" value="1" >Yes
 	                                </label>
-	                                <label class="full-width">
-	                                    <input type="radio" name="out_secur" id="no_out_secur" value="2" data-target="out-secur">No
+	                                <label class="full-width out-secur" data-target="out-secur">
+	                                    <input type="radio" name="out_secur" id="no_out_secur" value="2" >No
 	                                </label>
 	                            </div>
 							</div>
@@ -383,11 +383,11 @@
 								<div class="mb-20 mb-md-10">
 									<span class="mb-5">Have you conducted any exempt offerings in the past three years?</span>
 									<div class="full-width"></div>
-	                                <label class=" mt-15 full-width">
-	                                    <input type="radio" name="any_exempt_offer" id="yes_any_exempt_offer" value="1" data-target="any-exempt-offer">Yes
+	                                <label class=" mt-15 full-width any-exempt-offer" data-target="any-exempt-offer">
+	                                    <input type="radio" name="any_exempt_offer" id="yes_any_exempt_offer" value="1" >Yes
 	                                </label>
-	                                <label class="full-width">
-	                                    <input type="radio" name="any_exempt_offer" id="no_any_exempt_offer" value="2" data-target="any-exempt-offer">No
+	                                <label class="full-width any-exempt-offer" data-target="any-exempt-offer">
+	                                    <input type="radio" name="any_exempt_offer" id="no_any_exempt_offer" value="2" >No
 	                                </label>
 	                            </div>
 							</div>
@@ -457,11 +457,11 @@
 							<div class="col-md-10 col-md-offset-2">
 								<div class="mb-20 mb-md-10">
 									<span class="mb-5">Do you have any outstanding securities?</span><div class="full-width"></div>
-	                                <label class=" mt-15 full-width">
-	                                    <input type="radio" name="any_outst_securit" id="yes_any_outst_securit" value="1" data-target="any-outst-securit">Yes
+	                                <label class=" mt-15 full-width any-outst-securit" data-target="any-outst-securit">
+	                                    <input type="radio" name="any_outst_securit" id="yes_any_outst_securit" value="1" >Yes
 	                                </label>
-	                                <label class="full-width">
-	                                    <input type="radio" name="any_outst_securit" id="no_any_outst_securit" value="2" data-target="any-outst-securit">No
+	                                <label class="full-width any-outst-securit" data-target="any-outst-securit">
+	                                    <input type="radio" name="any_outst_securit" id="no_any_outst_securit" value="2" >No
 	                                </label>
 	                            </div>
 							</div>
@@ -509,11 +509,11 @@
 									<div>
 										<label for="other_rights">Other Rights</label>
 									</div>
-									<label class="full-width mt-15">
-	                                    <input type="radio" name="other_rights" id="yes_other_rights" value="1" data-target="other-rights">Yes
+									<label class="full-width mt-15 other-rights" data-target="other-rights">
+	                                    <input type="radio" name="other_rights" id="yes_other_rights" value="1" >Yes
 	                                </label>
-	                                <label class="full-width">
-	                                    <input type="radio" name="other_rights" id="no_other_rights" value="2" data-target="other-rights">No
+	                                <label class="full-width other-rights" data-target="other-rights">
+	                                    <input type="radio" name="other_rights" id="no_other_rights" value="2" >No
 	                                </label>
 								</div>
 								<div class="col-md-2 text-center pt-25">
@@ -766,7 +766,9 @@
 		</div>
 
 		<!-- <script src="js/jquery.min.js" type="text/javascript"></script> -->
+		<script src="js/underscore.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script src="js/backbone.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/pages.js"></script>
 		<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script> -->

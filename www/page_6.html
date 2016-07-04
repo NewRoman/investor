@@ -323,12 +323,12 @@
 								<div class="mb-20 mb-md-10">
 									<span class="mb-5">Have you had any transactions with related parties in the past 12 months?</span>
 									<div class="separate"></div>
-	                                <label class="full-width">
-	                                    <input type="radio" data-target="any-transaction" name="any_transaction" id="yes_transaction" value="1">Yes
+	                                <label class="full-width any-transaction" data-target="any-transaction">
+	                                    <input type="radio"  name="any_transaction" id="yes_transaction" value="1">Yes
 	                                </label>
 
-	                                <label class="full-width">
-	                                    <input type="radio" data-target="any-transaction" name="any_transaction" id="no_transaction" value="2">No
+	                                <label class="full-width any-transaction" data-target="any-transaction">
+	                                    <input type="radio"  name="any_transaction" id="no_transaction" value="2">No
 	                                </label>
 	                            </div>
 							</div>
@@ -566,7 +566,9 @@ Compute the amount of a related party's interest in any transaction without rega
 		</div>
 
 		<!-- <script src="js/jquery.min.js" type="text/javascript"></script> -->
+		<script src="js/underscore.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script src="js/backbone.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/pages.js"></script>
 		<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script> -->

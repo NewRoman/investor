@@ -312,11 +312,11 @@
 									<div class="separate">
 										
 									</div>
-	                                <label class="full-width mt-15">
-	                                    <input type="radio" name="oper_history" id="yes_oper_history" value="1" data-target="oper-history">Yes
+	                                <label class="full-width mt-15 oper-history" data-target="oper-history">
+	                                    <input type="radio" name="oper_history" id="yes_oper_history" value="1" >Yes
 	                                </label>
-	                                <label class="full-width">
-	                                    <input type="radio" name="oper_history" id="no_oper_history" value="2" data-target="oper-history">No
+	                                <label class="full-width oper-history" data-target="oper-history">
+	                                    <input type="radio" name="oper_history" id="no_oper_history" value="2">No
 	                                </label>
 	                            </div>
 							</div>
@@ -411,11 +411,11 @@ If your aggregate offering is:
 								<div class="mb-20 mb-md-10">
 									<span class="mb-5">Have you previously sold securities in reliance on Regulation Crowdfunding?</span>
 									<div class="separate"></div>
-	                                <label class=" mt-15 full-width">
-	                                    <input type="radio" data-target="prev-sold" name="prev_sold" id="yes_prev_sold" value="1">Yes
+	                                <label class=" mt-15 full-width prev-sold" data-target="prev-sold">
+	                                    <input type="radio" name="prev_sold" id="yes_prev_sold" value="1">Yes
 	                                </label>
-	                                <label class="full-width">
-	                                    <input type="radio" data-target="prev-sold" name="prev_sold" id="no_prev_sold" value="2">No
+	                                <label class="full-width prev-sold" data-target="prev-sold">
+	                                    <input type="radio"  name="prev_sold" id="no_prev_sold" value="2">No
 	                                </label>
 	                            </div>
 							</div>
@@ -425,7 +425,7 @@ If your aggregate offering is:
 
 							<div class="mb-10  form-group row">
 	                        	<label for="how_sold" class="col-md-4 text-right  -0">How much have you sold within the preceeding 12-month period? </label>
-	                        	<div class="col-md-4">
+	                        	<div class="col-md-4 how-sold">
 	                            	<input type="text" name="how_sold" id="how_sold" class="input-md form-control" placeholder="How much have you sold within the preceeding 12-month period?" maxlength="100">
 	                            	<div class="help-block with-errors"></div>
 	                        	</div>
@@ -1079,7 +1079,9 @@ If your aggregate offering is:
 		</div>
 
 		<!-- <script src="js/jquery.min.js" type="text/javascript"></script> -->
+		<script src="js/underscore.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script src="js/backbone.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/pages.js"></script>
 		<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script> -->

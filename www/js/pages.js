@@ -1,9 +1,26 @@
-$(document).ready(function(){
+var FormPages = Backbone.View.extend({
+    el: $('.form-pages'),
+    events: {
+    	"change label.fails input[type='radio']" : "showInputPage_1",
+    	"change .determine select" : "showTextareaPage_2",
+    	"change .payback-equity input[type='radio']" : "showPaybackEquityFieldsPage_2",
+    	"change label.any-transaction input[type='radio']" : "showRadioBlockPage_6",
+    	"change label.oper-history input[type='radio']" : "showRadioBlockPageHistory_7",
+    	"change label.prev-sold input[type='radio']" : "showRadioBlockPagePrevSold_7",
+    	"focusout .how-sold input[type='text']" : "showInputPage_7",
+    	"change label.out-secur input[type='radio']" : "showOutSecurBlockPage_8",
+    	"change label.any-exempt-offer input[type='radio']" : "showAnyExemptOfferBlockPage_8",
+    	"change label.any-outst-securit input[type='radio']" : "showAnyOutstSecuritBlockPage_8",
+    	"change label.other-rights input[type='radio']" : "showOtherRightsBlockPage_8",
+    	"change .have-cik input[type='checkbox']" : "showInputPage_10",
+        "click span.show-input": "showInputPage_FullText", // Обработчик клика для показа инпутов
+        "focusout input.inserted-input" : "showSpanWithValue_FullText",
+    },
 
-	// show suitable radio block
-	function showRadioBlock($this) {
+    // show suitable radio block
+	showRadioBlock: function($this) {
 		var value = parseInt($this.val()),
-			target = $this.data('target');
+			target = $this.closest('label').data('target');
 
 		var $suitFieldsBlock = $('[data-radio-block-' + target + '="' + value + '"]').length ?
 			$('[data-radio-block-' + target + '="' + value + '"]') :
@@ -16,12 +33,10 @@ $(document).ready(function(){
 
 			$suitFieldsBlock.fadeOut();
 		}
-	}
-
-
-	// page_1 script show input if click Yes radio btn name=fail
-	$(document).on('change', 'input[name="fails"]', function(){
-		var value = parseInt($(this).val());
+	},
+    // for page_1
+    showInputPage_1: function (event) {
+    	var value = parseInt($(event.target).val());
 
 		var $failInput = $('[data-radio-fail="' + value + '"]').length 
 			? $('[data-radio-fail="' + value + '"]')
@@ -32,120 +47,107 @@ $(document).ready(function(){
 		} else {
 			$failInput.fadeOut();
 		}
-	});
+    },
 
-
-
-	// page_2 script
-	$(document).on('change', '#determine', function(){
-		if (parseInt($(this).find('option:selected').val()) == 5) {
+    // for page_2
+    showTextareaPage_2: function (event) {
+    	if (parseInt($(event.target).find('option:selected').val()) == 5) {
 			$('.wrap-textarea').fadeIn();
 		} else {
 			$('.wrap-textarea').fadeOut();
 		}
-	});
-	$(document).on('change', 'input[name="payback-equity"]', function(){
-		var value = parseInt($(this).val());
+    },
+    showPaybackEquityFieldsPage_2: function (event) {
+    	var value = parseInt($(event.target).val());
 
-		$suitFields = $('[data-radio="' + value + '"]');
-		$allFields = $('[data-radio]');
+		$suitFields = $('[data-radio="' + value + '"] input');
+		$allFields = $('[data-radio] input');
 
 		if ($suitFields.length > 0) {
 			$allFields.closest('.form-group').hide();
 			$suitFields.closest('.form-group').fadeIn();
 			$('.radio-check-fields').fadeIn();
 		}
-	});
+    },
 
+    // for page_6
+    showRadioBlockPage_6: function (event) {
+    	this.showRadioBlock($(event.target));
+    },
 
+    // for page_7
+    showRadioBlockPageHistory_7: function (event) {
+    	this.showRadioBlock($(event.target));
+    },
+     showRadioBlockPagePrevSold_7: function (event) {
+    	this.showRadioBlock($(event.target));
+    },
 
-	// page_6 script
-	$(document).on('change', 'input[name="any_transaction"]', function(){
-
-		showRadioBlock($(this));
-	});
-
-	// page_7 script
-	$(document).on('change', 'input[name="oper_history"]', function(){
-
-		showRadioBlock($(this));
-	});
-
-	$(document).on('change', 'input[name="prev_sold"]', function(){
-
-		showRadioBlock($(this));
-	});
-
-	$(document).on('focusout', 'input[name="how_sold"]', function(){
-		if (parseInt($(this).val()) > 100) {
+    showInputPage_7: function (event) {
+    	if (parseInt($(event.target).val()) > 100) {
 			$('[data-input-more-value]').fadeIn();
 		} else {
 			$('[data-input-more-value]').fadeOut();
 		}
-	});
+    },
+
+    // for page_8
+    showOutSecurBlockPage_8: function (event) {
+    	this.showRadioBlock($(event.target));
+    },
+    showAnyExemptOfferBlockPage_8: function (event) {
+    	this.showRadioBlock($(event.target));
+    },
+    showAnyOutstSecuritBlockPage_8: function (event) {
+    	this.showRadioBlock($(event.target));
+    },
+    showOtherRightsBlockPage_8: function (event) {
+    	this.showRadioBlock($(event.target));
+    },
+
+    // for page_10
+    showInputPage_10: function (event) {
+    	$('.already-cik-fields').toggleClass('hide');
+    },
 
 
-	// script for page_8
-	$(document).on('change', 'input[name="out_secur"]', function(){
+    // for full-text
+    showInputPage_FullText: function (event) {
+        if ($(event.target).hasClass('noactive')) {
+			return false;
+		}
 
-		showRadioBlock($(this));
-	});
-	$(document).on('change', 'input[name="any_exempt_offer"]', function(){
+		var $this = $(event.target),
+			inputId = $this.data('input-id'),
+			$input = $('input' + '#' + inputId);
 
-		showRadioBlock($(this));
-	});
-	$(document).on('change', 'input[name="any_outst_securit"]', function(){
+		$this.hide();
 
-		showRadioBlock($(this));
-	});
-	$(document).on('change', 'input[name="other_rights"]', function(){
+		if ($input.length == 0) {
+			$input = $('<input type="text" id="' + inputId + '" name="' + inputId + '" class="inserted-input"/>');
+			$this.after($input);
+		}
 
-		showRadioBlock($(this));
-	});
+		$input.fadeIn().focus();
+    },
 
-	// script for page_10
-	$(document).on('change', '#have_cik', function(){
-		$('.already-cik-fields').toggleClass('hide');
-	});
-
-	// script for full-text
-	$(document).on('click', '.show-input', function(){
-		var $this = $(this),
-			inputName = $this.data('input-name'),
-			$input = $('<input type="text" name="' + inputName + '" class="inserted-input"/>');
-
-		$this.replaceWith($input);
-		$input.focus();
-	});
-
-	$(document).on('focusout', 'form_pages .inserted-input', function(){
-		var $this = $(this),
+    showSpanWithValue_FullText: function (event) {
+    	var $this = $(event.target),
 			value = $this.val(),
-			inputName = $this.attr('name');
+			inputId = $this.attr('id'),
+			$span = $('[data-input-id="' + inputId + '"]');
 
-			console.log(value);
-
-			// $.ajax({
-   //              url: ,
-   //              dataType: ,
-   //              success: function () {
-   //              }
-   //          });
-
-	});
-
-	$(document).on('change', 'form.full-text input[type="checkbox"]', function(){
-		if ($(this).closest('div').hasClass('red-bg')) {
-			$(this).closest('.red-bg').removeClass('red-bg')
-
-		} else {
-			$(this).closest('div').addClass('red-bg');
+		if (value !== '') {
+			$span.text(value);
 		}
-	});
 
-	$(document).on('change', 'form.full-text input[type="radio"]', function(){
-		if ($(this).closest('div').hasClass('red-bg')) {
-			$('input[name="' + $(this).attr('name') + '"]').closest('div').removeClass('red-bg');
-		}
-	});
+		$this.hide();
+		$span.fadeIn();
+    }
+});
+
+
+
+$(document).ready(function(){
+	var formPages = new FormPages();
 });
