@@ -290,6 +290,9 @@
   max-width: 130px;
   width: 100%;
 }
+.form-page-10 table.desc-issuer-secur.table > thead > tr > th {
+  width: 20%;
+}
 .form-page-10 ul {
   margin-left: 0;
   padding-left: 20px;
