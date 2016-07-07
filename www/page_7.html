@@ -312,18 +312,18 @@
 									<div class="separate">
 										
 									</div>
-	                                <label class="full-width mt-15 oper-history" data-target="oper-history">
-	                                    <input type="radio" name="oper_history" id="yes_oper_history" value="1" >Yes
+	                                <label class="full-width mt-15 ">
+	                                    <input type="radio" data-target=".operation-history-fields:.operation-history" name="oper_history" value="1" class="blockTriggerRadio" >Yes
 	                                </label>
 	                                <label class="full-width oper-history" data-target="oper-history">
-	                                    <input type="radio" name="oper_history" id="no_oper_history" value="2">No
+	                                    <input type="radio" data-target=".operation-history-fields:.fake-operation-history" name="oper_history" id="no_oper_history" value="2" class="blockTriggerRadio">No
 	                                </label>
 	                            </div>
 							</div>
 						</div>
 
 
-						<div class="operation-history-fields" data-radio-block-oper-history='1'>
+						<div class="operation-history-fields operation-history">
 							<span>
 								Please discuss financial milestones and operational, liquidity and other challenges.  Please discuss how the proceeds from the offering will affect your liquidity, whether these funds are necessary to the viability of the business, and how quickly you anticipate using your available cash.  Please also discuss other available sources of capital, such as lines of credit or required contributions by shareholders, for example.
 							</span>
@@ -411,17 +411,17 @@ If your aggregate offering is:
 								<div class="mb-20 mb-md-10">
 									<span class="mb-5">Have you previously sold securities in reliance on Regulation Crowdfunding?</span>
 									<div class="separate"></div>
-	                                <label class=" mt-15 full-width prev-sold" data-target="prev-sold">
-	                                    <input type="radio" name="prev_sold" id="yes_prev_sold" value="1">Yes
+	                                <label class=" mt-15 full-width">
+	                                    <input type="radio" name="prev_sold" value="1" data-target=".sold-experience-fields:.sold-experience" class="blockTriggerRadio">Yes
 	                                </label>
-	                                <label class="full-width prev-sold" data-target="prev-sold">
-	                                    <input type="radio"  name="prev_sold" id="no_prev_sold" value="2">No
+	                                <label class="full-width" >
+	                                    <input type="radio" data-target=".sold-experience-fields" name="prev_sold" value="2" class="blockTriggerRadio">No
 	                                </label>
 	                            </div>
 							</div>
 						</div>
 
-						<div class="sold-experience-fields" data-radio-block-prev-sold='1'>
+						<div class="sold-experience-fields sold-experience">
 
 							<div class="mb-10  form-group row">
 	                        	<label for="how_sold" class="col-md-4 text-right  -0">How much have you sold within the preceeding 12-month period? </label>
@@ -768,7 +768,7 @@ If your aggregate offering is:
 
 								</div>
 
-								<div class="hidden-block" data-input-more-value>
+								<div class="sold_within_the_preceeding_12_month" data-input-more-value>
 
 									<div class="row mt-25">
 										<div class="col-md-3 col-md-offset-1 col-sm-4">

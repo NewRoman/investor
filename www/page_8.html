@@ -309,18 +309,18 @@
 							<div class="col-md-10 col-md-offset-2">
 								<div class="mb-20 mb-md-10">
 									<span class="mb-5">Do you have any business loans or debt?</span><div class="separate"></div>
-	                                <label class="full-width mt-15 out-secur" data-target="out-secur">
-	                                    <input type="radio" name="out_secur" id="yes_out_secur" value="1" >Yes
+	                                <label class="full-width mt-15">
+	                                    <input type="radio" name="out_secur" data-target=".business-loans-or-debt-fields:.business-loans-or-debt" value="1" class="blockTriggerRadio">Yes
 	                                </label>
-	                                <label class="full-width out-secur" data-target="out-secur">
-	                                    <input type="radio" name="out_secur" id="no_out_secur" value="2" >No
+	                                <label class="full-width">
+	                                    <input type="radio" name="out_secur" data-target=".business-loans-or-debt-fields:.fake-business-loans-or-debt" value="2" class="blockTriggerRadio">No
 	                                </label>
 	                            </div>
 							</div>
 						</div>
 
 
-						<div class="out-secur-fields" data-radio-block-out-secur='1'>
+						<div class="business-loans-or-debt-fields business-loans-or-debt">
 							<div class="mb-10  form-group row">
 	                        	<label for="creditor" class="col-md-4 text-right mr-0">Creditor</label>
 	                        	<div class="col-md-4">
@@ -383,18 +383,18 @@
 								<div class="mb-20 mb-md-10">
 									<span class="mb-5">Have you conducted any exempt offerings in the past three years?</span>
 									<div class="full-width"></div>
-	                                <label class=" mt-15 full-width any-exempt-offer" data-target="any-exempt-offer">
-	                                    <input type="radio" name="any_exempt_offer" id="yes_any_exempt_offer" value="1" >Yes
+	                                <label class=" mt-15 full-width">
+	                                    <input type="radio" data-target=".any-exempt-offer-fields:.any-exempt-offer" name="any_exempt_offer" class="blockTriggerRadio" value="1" >Yes
 	                                </label>
-	                                <label class="full-width any-exempt-offer" data-target="any-exempt-offer">
-	                                    <input type="radio" name="any_exempt_offer" id="no_any_exempt_offer" value="2" >No
+	                                <label class="full-width">
+	                                    <input type="radio" name="any_exempt_offer" data-target=".any-exempt-offer-fields" class="blockTriggerRadio" value="2" >No
 	                                </label>
 	                            </div>
 							</div>
 						</div>
 
 
-						<div class="any-exempt-offer-fields" data-radio-block-any-exempt-offer='1'>
+						<div class="any-exempt-offer-fields any-exempt-offer">
 							<div class="mb-10  form-group row">
 	                        	<label for="date_offer" class="col-md-4 text-right mr-0">Date of the Offering</label>
 	                        	<div class="col-md-4">
@@ -457,17 +457,17 @@
 							<div class="col-md-10 col-md-offset-2">
 								<div class="mb-20 mb-md-10">
 									<span class="mb-5">Do you have any outstanding securities?</span><div class="full-width"></div>
-	                                <label class=" mt-15 full-width any-outst-securit" data-target="any-outst-securit">
-	                                    <input type="radio" name="any_outst_securit" id="yes_any_outst_securit" value="1" >Yes
+	                                <label class=" mt-15 full-width">
+	                                    <input type="radio" name="any_outst_securit" data-target=".any-outst-securit-fields:.any-outst-securit" value="1" class="blockTriggerRadio">Yes
 	                                </label>
-	                                <label class="full-width any-outst-securit" data-target="any-outst-securit">
-	                                    <input type="radio" name="any_outst_securit" id="no_any_outst_securit" value="2" >No
+	                                <label class="full-width">
+	                                    <input type="radio" name="any_outst_securit" value="2" class="blockTriggerRadio" data-target=".any-outst-securit-fields">No
 	                                </label>
 	                            </div>
 							</div>
 						</div>
 
-						<div class="any-outst-securit-fields" data-radio-block-any-outst-securit='1'>
+						<div class="any-outst-securit-fields any-outst-securit" >
 							<div class="row">
 								<div class="col-md-2">
 									<div class="mb-25  form-group">
@@ -509,11 +509,11 @@
 									<div>
 										<label for="other_rights">Other Rights</label>
 									</div>
-									<label class="full-width mt-15 other-rights" data-target="other-rights">
-	                                    <input type="radio" name="other_rights" id="yes_other_rights" value="1" >Yes
+									<label class="full-width mt-15">
+	                                    <input type="radio" name="other_rights" value="1" data-target=".other-rights-fields:.other-rights" class="blockTriggerRadio">Yes
 	                                </label>
-	                                <label class="full-width other-rights" data-target="other-rights">
-	                                    <input type="radio" name="other_rights" id="no_other_rights" value="2" >No
+	                                <label class="full-width other-rights">
+	                                    <input type="radio" name="other_rights" data-target=".other-rights-fields" value="2" class="blockTriggerRadio">No
 	                                </label>
 								</div>
 								<div class="col-md-2 text-center pt-25">
@@ -521,7 +521,7 @@
 								</div>
 							</div>
 
-							<div class="other-rights-fields mt-30" data-radio-block-other-rights='1'>
+							<div class="other-rights-fields other-rights mt-30">
 								<div class="mb-10  form-group row">
 		                        	<label for="specify_other_rights" class="col-md-4 text-right mr-0">Specify Other Rights</label>
 		                        	<div class="col-md-4">

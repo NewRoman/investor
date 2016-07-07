@@ -343,13 +343,15 @@
 						<h5> Has the issuer or any of its predecessors previously failed to comply with the ongoing reporting requirements of Rule 202 Regulation Crowdfunding?</h5>
 						<div class="form-group wpcf7-form-control-wrap   fails clearfix">
 							<div class="col-md-2">
-								<ul id="id_fails"><li><label class="fails" for="id_fails_0"><input id="id_fails_0" name="fails" type="radio" value="1"> Yes</label></li>
-									<li><label class="fails" for="id_fails_1"><input id="id_fails_1" name="fails" type="radio" value="2"> No</label></li>
+								<ul id="id_fails"><li><label class="fails" for="id_fails_0"><input data-target=".previously-failed-field:.previously-failed" id="id_fails_0" name="fails" type="radio" value="1" class="blockTriggerRadio"> Yes</label></li>
+									<li><label class="fails" for="id_fails_1"><input data-target=".previously-failed-field" id="id_fails_1" name="fails" type="radio" value="2" class="blockTriggerRadio"> No</label></li>
 								</ul>
 							</div>
 
-							<div class="col-md-10 align-left">
-								<input type="text" class="input-md form-control" name="fail_explain" value="" placeholder="If Yes, explain:" data-radio-fail="1">
+							<div class="previously-failed-field previously-failed" style="display:none">
+								<div class="col-md-10 align-left">
+									<input type="text" class="input-md form-control" name="fail_explain" value="" placeholder="If Yes, explain:">
+								</div>
 							</div>
 						</div>
 

@@ -323,19 +323,19 @@
 								<div class="mb-20 mb-md-10">
 									<span class="mb-5">Have you had any transactions with related parties in the past 12 months?</span>
 									<div class="separate"></div>
-	                                <label class="full-width any-transaction" data-target="any-transaction">
-	                                    <input type="radio"  name="any_transaction" id="yes_transaction" value="1">Yes
+	                                <label class="full-width any-transaction">
+	                                    <input type="radio" data-target=".any-transaction-fields:.transaction-fields" class="blockTriggerRadio" name="any_transaction" value="1">Yes
 	                                </label>
 
-	                                <label class="full-width any-transaction" data-target="any-transaction">
-	                                    <input type="radio"  name="any_transaction" id="no_transaction" value="2">No
+	                                <label class="full-width any-transaction">
+	                                    <input type="radio" data-target=".any-transaction-fields:.fake-transaction-fields" class="blockTriggerRadio" name="any_transaction" value="2">No
 	                                </label>
 	                            </div>
 							</div>
 						</div>
 
 	
-						<div class="any-transaction-fields" data-radio-block-any-transaction='1'>
+						<div class="any-transaction-fields transaction-fields">
 
 							<div class="mb-10  form-group row">
 	                        	<label for="specified_person" class="col-md-4 text-right mr-0">Specified Person</label>

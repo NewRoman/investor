@@ -124,15 +124,15 @@
 .form-page-2 .wrap-textarea {
   display: none;
 }
-.form-page-2 .radio-check-fields {
+.form-page-2 .security-type-fields {
   display: none;
 }
-.form-page-2 .radio-check-fields label {
+.form-page-2 .security-type-fields label {
   display: inline-block;
   margin-top: 6px;
   padding-right: 0;
 }
-.form-page-2 .radio-check-fields label + input {
+.form-page-2 .security-type-fields label + input {
   display: inline-block;
 }
 .form-page-2 .notes-import p {
@@ -186,11 +186,11 @@
   margin-top: 4px;
   margin-bottom: 5px;
 }
-.form-page-7 div.hidden-block {
+.form-page-7 div.sold_within_the_preceeding_12_month {
   margin-top: 25px;
   display: none;
 }
-.form-page-8 .out-secur-fields,
+.form-page-8 .business-loans-or-debt-fields,
 .form-page-8 .any-exempt-offer-fields,
 .form-page-8 .any-outst-securit-fields,
 .form-page-8 .other-rights-fields {

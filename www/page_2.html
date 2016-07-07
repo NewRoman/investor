@@ -403,11 +403,11 @@ How are the securities being offered being value? Include examples of methods fo
 	                                <label class="radio-inline">
 	                                    Security type:
 	                                </label>
-	                                <label class="radio-inline payback-equity">
-	                                    <input type="radio" name="payback-equity" id="equity" value="1">Equity
+	                                <label class="radio-inline">
+	                                    <input type="radio" name="payback-equity" id="equity" value="1" class="blockTriggerRadio" data-target=".security-type-fields:.security-type">Equity
 	                                </label>
-	                                <label class="radio-inline payback-equity">
-	                                    <input type="radio" name="payback-equity" id="payback-equity" value="2">Payback Equity
+	                                <label class="radio-inline">
+	                                    <input type="radio" name="payback-equity" id="payback-equity" value="2" class="blockTriggerRadio" data-target=".security-type-fields">Payback Equity
 	                                </label>
 	                            </div>
 							</div>
@@ -423,7 +423,7 @@ How are the securities being offered being value? Include examples of methods fo
 							</div>
 						</div>
 
-						<div class="radio-check-fields">
+						<div class="security-type-fields security-type">
 							
 	                        <div class="mb-10  form-group row">
 	                        	<label for="equity_1" class="col-md-4 text-right  ">Price per Share</label>
